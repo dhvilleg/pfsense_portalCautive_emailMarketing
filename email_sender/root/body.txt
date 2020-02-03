@@ -1,0 +1,21 @@
+to: lesthatd666@hotmail.com
+bcc: lesthatd666@gmail.com
+From: notificaciones itservices
+Subject: Notificacion portal cautivo
+MIME-Version: 1.0
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html>
+<body>
+<b>Se presenta adjunto, informe semanal de usuarios registrados en Poral Cautivo </b>
+
+<table border = '1'> 
+<tr><td>Nombre</td><td>E-Mail</td><td>Celular</td><td>Establecimiento</td><td>Fecha</td></tr> 
+<tr><td>Diego Villegas</td><td>alguien@tcs.com</td><td>0984151639</td><td>atahualpa</td><td>2019-12-26</td></tr> 
+<tr><td>sabina lemos</td><td>sabina@lemos.com</td><td>0998741638</td><td>atahualpa</td><td>2019-12-26</td></tr> 
+<tr><td>Joaquin Villegas</td><td>joaco@villegas.com</td><td>0984161537</td><td>atahualpa</td><td>2019-12-26</td></tr> 
+<tr><td>alguie vino</td><td>alguien@vinjo.com</td><td>0874131539</td><td>atahualpa</td><td>2019-12-26</td></tr> 
+
+</body>
+</html>

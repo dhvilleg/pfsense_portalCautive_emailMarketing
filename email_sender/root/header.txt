@@ -1,0 +1,11 @@
+to: lesthatd666@hotmail.com
+bcc: lesthatd666@gmail.com
+From: notificaciones itservices
+Subject: Notificacion portal cautivo
+MIME-Version: 1.0
+Content-Type: text/html
+
+<!DOCTYPE html>
+<html>
+<body>
+<b>Se presenta adjunto, informe semanal de usuarios registrados en Poral Cautivo </b>

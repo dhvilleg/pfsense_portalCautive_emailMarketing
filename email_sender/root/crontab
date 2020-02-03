@@ -1,0 +1,2 @@
+*/1 * * * * root /usr/local/bin/mysql_relaunch.sh
+49 9 * * 1 /bin/sh /root/script.sh
