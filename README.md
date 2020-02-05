@@ -66,28 +66,33 @@ To built this implementation, follow next steps.
 		> form name="login_form" method="post" action="https://YOUR_FQDN_SERVER:8003/index.php?zone=YOUR_ZONE_NAME
 		
 		To upload a file you need a SCP client		![enter image description here](https://raw.githubusercontent.com/dhvilleg/pfsense_portalCautive_emailMarketing/master/images/pfsense_enableCustomPG_2_upload.png)
+		
+		
 ## Configure dependences 
+
 To save the login information in a database, create reports and send these reports by email, we must install some dependencies such as Mysql, ssmtp and PHP_Mysqli, to make it easier, I did an installation script located on: [Installation script](https://github.com/dhvilleg/pfsense_portalCautive_emailMarketing/blob/master/scripts/install.sh), be carefull with execution without change parameters such as passwords, e-mail source, e-mail authorization passwords, e-mail recipments, and so on.
 
 Before to install all packages, you must [create an authorization password](https://www.lifewire.com/get-a-password-to-access-gmail-by-pop-imap-2-1171882) for sender account. 
 
 All scripts created with install.sh are included in the GitHub repository, these scripts are shown below with a brief description:
-| GitHub Location |script name | Server location |description
-|--|--|--|--|
-| root directory | index.html |upload through pfsense captive portal conf.|Custom login page, contains login form and passes this information to contacts.php
-|root directory|contacts.php|/usr/local/captiveportal|takes the login information, saves it in a database and offers an internet session
-|scripts|script.sh|/root/|schedule this script in a crontab to get a clients login report
-|scripts|mysql-server.sh|/usr/local/etc/rc.d/|Mysql Start/Stop services script
-|scripts|install.sh|/root/|install all dependences and write most important scripts and configuration files
-|scripts|CreateBDD|none|little script to create databases table 
-|/scripts/usr/bin/local/|mysql_relaunch.sh|/scripts/usr/bin/local/|schedule this script every 5 minutes to ensure sql server always still running
-|images|captiveportal-background.jpg|upload through pfsense captive portal conf.|your custom background image
-|images|captiveportal-logo.png|upload through pfsense captive portal conf.|your custom logo image
-|email_sender/root|body.txt|/root|email report body, this file is made by script.sh
-|email_sender/root|crontab	|none|crontab example
-|email_sender/root|header.txt|/root|email header, this file is user to make body.conf, change email recipments in this file
-|email_sender/root|usuarios.php|/root|Create a report with information from the database, send information from the last 7 days and also write the second part of the body's email.
-|conf_files/usr/local/etc/ssmtp/|ssmtp.conf|/usr/local/etc/ssmtp/|configure here your gmail account and your auth passwd.
+
+| GitHub Location | script name | Server location | description
+|-----|-----|-----|-----|
+| root directory | index.html | upload through pfsense captive portal conf.| Custom login page, contains login form and passes this information to contacts.php
+| root directory | contacts.php | /usr/local/captiveportal | takes the login information, saves it in a database and offers an internet session
+| scripts | script.sh | /root/ | schedule this script in a crontab to get a clients login report
+| scripts | mysql-server.sh | /usr/local/etc/rc.d/ | Mysql Start/Stop services script
+| scripts | install.sh | /root/ | install all dependences and write most important scripts and configuration files
+| scripts | CreateBDD | none | little script to create databases table 
+| /scripts/usr/bin/local/ | mysql_relaunch.sh| /scripts/usr/bin/local/|schedule this script every 5 minutes to ensure sql server always still running
+| images | captiveportal-background.jpg | upload through pfsense captive portal conf. | your custom background image
+| images | captiveportal-logo.png | upload through pfsense captive portal conf. | your custom logo image
+| email_sender/root | body.txt | /root | email report body, this file is made by script.sh
+| email_sender/root | crontab	| none | crontab example
+| email_sender/root | header.txt | /root | email header, this file is user to make body.conf, change email recipments in this file
+| email_sender/root | usuarios.php | /root | Create a report with information from the database, send information from the last 7 days and also write the second part of the body's email.
+| conf_files/usr/local/etc/ssmtp/ | ssmtp.conf | /usr/local/etc/ssmtp/ | configure here your gmail account and your auth passwd.
+
 
 ## Conclutions and results
 Take special attention to prerequisites and desing considerations, wee need minimun a PC or server with two NIC's one for WAN(internet access) and another for LAN (Captive portal net), another consideration is that AccessPoint autentication must be open.
