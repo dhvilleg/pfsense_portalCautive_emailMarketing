@@ -68,12 +68,12 @@ pkg add http://pkg.freebsd.org/FreeBSD:11:amd64/latest/All/ssmtp-2.64_3.txz
 ##########################################################################
 
 
-echo 'root=notificaciones.itservices@gmail.com'>/usr/local/etc/ssmtp/ssmtp.conf
+echo 'root=YOUR_NOTIFICATION_MAIL@gmail.com'>/usr/local/etc/ssmtp/ssmtp.conf
 echo 'mailhub=smtp.gmail.com:465'>>/usr/local/etc/ssmtp/ssmtp.conf
 echo 'rewriteDomain='>>/usr/local/etc/ssmtp/ssmtp.conf
 echo 'hostname=_HOSTNAME_'>>/usr/local/etc/ssmtp/ssmtp.conf
-echo 'AuthUser=notificaciones.itservices@gmail.com'>>/usr/local/etc/ssmtp/ssmtp.conf
-echo 'AuthPass=sgqgznwryplihmkj'>>/usr/local/etc/ssmtp/ssmtp.conf
+echo 'AuthUser=YOUR_NOTIFICATION_MAIL.itservices@gmail.com'>>/usr/local/etc/ssmtp/ssmtp.conf
+echo 'AuthPass=YOUR_AUTHORIZATION_PASSWORD'>>/usr/local/etc/ssmtp/ssmtp.conf
 echo 'FromLineOverride=YES'>>/usr/local/etc/ssmtp/ssmtp.conf
 echo 'UseTLS=YES'>>/usr/local/etc/ssmtp/ssmtp.conf
 
@@ -93,7 +93,7 @@ echo '<b>Se presenta adjunto, informe semanal de usuarios registrados en Poral C
 
 
 ##########################################################################
-#				 DONT WORK THIS SECTION FOR "$" CHARACTER.
+#				 THIS SECTION DONT WORK BECAUSE "$" CHARACTER.
 #echo '$sql = "select name, email, celular, establecimiento, fecha from usuarios where fecha >= ".'"'.$date_sem.'"';'>>/root/usuarios.php
 #
 #I SUGESS CREATE DIRECTLY FILE FROM GIT SOURCE
