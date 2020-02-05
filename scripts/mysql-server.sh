@@ -31,7 +31,7 @@ rcvar=mysql_enable
 
 load_rc_config $name
 
-: ${mysql_enable="NO"}
+: ${mysql_enable="YES"}
 : ${mysql_limits="NO"}
 : ${mysql_dbdir="/var/db/mysql"}
 : ${mysql_optfile="${mysql_dbdir}/my.cnf"}
