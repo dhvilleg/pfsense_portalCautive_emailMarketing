@@ -1,4 +1,4 @@
-#!/usr/bin/env sh  
+#!/bin/sh
 
 service /mysql-server.sh status > /dev/null
 if [ $? != 0 ]; then
