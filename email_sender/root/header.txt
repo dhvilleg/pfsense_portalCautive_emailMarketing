@@ -1,5 +1,5 @@
-to: lesthatd666@hotmail.com
-bcc: lesthatd666@gmail.com
+to: YOUR_RECIPIENT_MAIL@hotmail.com
+bcc: YOUR_RECIPIENT_MAIL@gmail.com
 From: notificaciones itservices
 Subject: Notificacion portal cautivo
 MIME-Version: 1.0
