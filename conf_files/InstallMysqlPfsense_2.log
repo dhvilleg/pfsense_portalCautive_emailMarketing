@@ -1,1005 +1,0 @@
-=~=~=~=~=~=~=~=~=~=~=~= MobaXterm log 2020.02.04 15:38:26 =~=~=~=~=~=~=~=~=~=~=~=
-vi /usr/local/etc/pkg/repos/pfSense.conf
-[1;41r[m[4l[?1h=[H[2JFreeBSD: { enabled: no }[2BpfSense-core: {[4;3Hurl: "pkg+https://pkg.pfsense.org/pfSense_v2_4_4_amd64-core",[5;3Hmirror_type: "srv",[6;3Hsignature_type: "fingerprints",[7;3Hfingerprints: "/usr/local/share/pfSense/keys/pkg",[8;3Henabled: yes[1B}[2BpfSense: {[12;3Hurl: "pkg+https://pkg.pfsense.org/pfSense_v2_4_4_amd64-pfSense_v2_4_4",[13;3Hmirror_type: "srv",[14;3Hsignature_type: "fingerprints",[15;3Hfingerprints: "/usr/local/share/pfSense/keys/pkg",[16;3Henabled: yes[1B}[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[H[40B/usr/local/etc/pkg/repos/pfSense.conf: unmodified: line 1[H[40B[J[HFreeBSD: { enabled: [40BCopying file for recovery...[J[1;21Ho }[K }[Ky }e }s }[40B:wq/usr/local/etc/pkg/repos/pfSense.conf: 17 lines, 445 characters[?1l>
-[40;64H.[1B[41;1H[?1l>[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m pkg update
-Updating pfSense-core repository catalogue...
-pfSense-core repository is up to date.
-Updating pfSense repository catalogue...
-pfSense repository is up to date.
-All repositories are up to date.
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m skg search [11D[P[4hp[4l[10Cmysql
-mysql56-client-5.6.41          Multithreaded SQL database (client)
-php72-mysqli-7.2.10            The mysqli shared extension for php
-php72-pdo_mysql-7.2.10         The pdo_mysql shared extension for php
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m pkg add http://pkg.freebsd.org/FreeBSD:11:amd64/latest/All/mysql56-server-5.6.47.txz
-Fetching mysql56-server-5.6.47.txz:   0%Fetching mysql56-server-5.6.47.txz:   1%  160 KiB 163.8kB/s    00:49 ETAFetching mysql56-server-5.6.47.txz:   9%  728 KiB 581.6kB/s    00:18 ETAFetching mysql56-server-5.6.47.txz:  20%    2 MiB 942.1kB/s    00:09 ETAFetching mysql56-server-5.6.47.txz:  23%    2 MiB 229.4kB/s    00:09 ETAFetching mysql56-server-5.6.47.txz:  24%    2 MiB  98.3kB/s    00:10 ETAFetching mysql56-server-5.6.47.txz:  27%    2 MiB 221.2kB/s    00:10 ETAFetching mysql56-server-5.6.47.txz:  30%    2 MiB 303.1kB/s    00:10 ETAFetching mysql56-server-5.6.47.txz:  35%    3 MiB 376.8kB/s    00:09 ETAFetching mysql56-server-5.6.47.txz:  40%    3 MiB 450.6kB/s    00:09 ETAFetching mysql56-server-5.6.47.txz:  46%    4 MiB 507.9kB/s    00:08 ETAFetching mysql56-server-5.6.47.txz:  54%    4 MiB 598.0kB/s    00:07 ETAFetching mysql56-server-5.6.47.txz:  61%    5 MiB 573.4kB/s    00:05 ETAFetching mysql56-server-5.6.47.txz:  64%    5 MiB 254.0kB/s    00:05 ETAFetching mysql56-server-5.6.47.txz:  67%    5 MiB 286.7kB/s    00:05 ETAFetching mysql56-server-5.6.47.txz:  72%    6 MiB 434.2kB/s    00:04 ETAFetching mysql56-server-5.6.47.txz:  78%    6 MiB 499.7kB/s    00:03 ETAFetching mysql56-server-5.6.47.txz:  85%    7 MiB 540.7kB/s    00:02 ETAFetching mysql56-server-5.6.47.txz:  93%    7 MiB 639.0kB/s    00:01 ETAFetching mysql56-server-5.6.47.txz: 100%    8 MiB 459.3kB/s    00:18    
-Installing mysql56-server-5.6.47...
-Newer FreeBSD version for package mysql56-server:
-To ignore this error set IGNORE_OSVERSION=yes
-- package: 1103000
-- running kernel: 1102000
-Allow missmatch now?[Y/n]: y
-pkg: Missing dependency 'mysql56-client'
-
-Failed to install the following 1 package(s): http://pkg.freebsd.org/FreeBSD:11:amd64/latest/All/mysql56-server-5.6.47.txz
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m pkg in[K[Ka[K add http://pkg.freebsd.org/FreeBSD:11:amd64/latest/All/mysql56-server-5.6.47.txz
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m myspkg add http://pkg.freebsd.org/FreeBSD:11:amd64/latest/All/mysql56-server-5.6.47.txzr
-^C
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m pkg add http://pkg.freebsd.org/FreeBSD:11:amd64/latest/All/mysql56-server-5.6.47.txz[P[P[P[P[P[P[4hc[4l[4hl[4l[4hi[4l[4he[4l[4hn[4l[4ht[4l
-Fetching mysql56-client-5.6.47.txz:   0%Fetching mysql56-client-5.6.47.txz:  14%  208 KiB 213.0kB/s    00:05 ETAFetching mysql56-client-5.6.47.txz:  45%  664 KiB 466.9kB/s    00:02 ETAFetching mysql56-client-5.6.47.txz:  81%    1 MiB 532.5kB/s    00:00 ETAFetching mysql56-client-5.6.47.txz: 100%    1 MiB 494.8kB/s    00:03    
-Installing mysql56-client-5.6.47...
-Newer FreeBSD version for package mysql56-client:
-To ignore this error set IGNORE_OSVERSION=yes
-- package: 1103000
-- running kernel: 1102000
-Allow missmatch now?[Y/n]: y
-Extracting mysql56-client-5.6.47:   0%Extracting mysql56-client-5.6.47:   0%Extracting mysql56-client-5.6.47:   1%Extracting mysql56-client-5.6.47:   2%Extracting mysql56-client-5.6.47:   3%Extracting mysql56-client-5.6.47:   4%Extracting mysql56-client-5.6.47:   5%Extracting mysql56-client-5.6.47:   6%Extracting mysql56-client-5.6.47:   7%Extracting mysql56-client-5.6.47:   8%Extracting mysql56-client-5.6.47:   9%Extracting mysql56-client-5.6.47:  10%Extracting mysql56-client-5.6.47:  11%Extracting mysql56-client-5.6.47:  12%Extracting mysql56-client-5.6.47:  13%Extracting mysql56-client-5.6.47:  14%Extracting mysql56-client-5.6.47:  15%Extracting mysql56-client-5.6.47:  16%Extracting mysql56-client-5.6.47:  17%Extracting mysql56-client-5.6.47:  18%Extracting mysql56-client-5.6.47:  19%Extracting mysql56-client-5.6.47:  20%Extracting mysql56-client-5.6.47:  21%Extracting mysql56-client-5.6.47:  22%Extracting mysql56-client-5.6.47:  23%Extracting mysql56-client-5.6.47:  24%Extracting mysql56-client-5.6.47:  25%Extracting mysql56-client-5.6.47:  26%Extracting mysql56-client-5.6.47:  27%Extracting mysql56-client-5.6.47:  28%Extracting mysql56-client-5.6.47:  29%Extracting mysql56-client-5.6.47:  30%Extracting mysql56-client-5.6.47:  31%Extracting mysql56-client-5.6.47:  32%Extracting mysql56-client-5.6.47:  33%Extracting mysql56-client-5.6.47:  34%Extracting mysql56-client-5.6.47:  35%Extracting mysql56-client-5.6.47:  36%Extracting mysql56-client-5.6.47:  37%Extracting mysql56-client-5.6.47:  38%Extracting mysql56-client-5.6.47:  39%Extracting mysql56-client-5.6.47:  40%Extracting mysql56-client-5.6.47:  41%Extracting mysql56-client-5.6.47:  42%Extracting mysql56-client-5.6.47:  43%Extracting mysql56-client-5.6.47:  44%Extracting mysql56-client-5.6.47:  45%Extracting mysql56-client-5.6.47:  46%Extracting mysql56-client-5.6.47:  47%Extracting mysql56-client-5.6.47:  48%Extracting mysql56-client-5.6.47:  49%Extracting mysql56-client-5.6.47:  50%Extracting mysql56-client-5.6.47:  51%Extracting mysql56-client-5.6.47:  52%Extracting mysql56-client-5.6.47:  53%Extracting mysql56-client-5.6.47:  54%Extracting mysql56-client-5.6.47:  55%Extracting mysql56-client-5.6.47:  56%Extracting mysql56-client-5.6.47:  57%Extracting mysql56-client-5.6.47:  58%Extracting mysql56-client-5.6.47:  59%Extracting mysql56-client-5.6.47:  60%Extracting mysql56-client-5.6.47:  61%Extracting mysql56-client-5.6.47:  62%Extracting mysql56-client-5.6.47:  63%Extracting mysql56-client-5.6.47:  64%Extracting mysql56-client-5.6.47:  65%Extracting mysql56-client-5.6.47:  66%Extracting mysql56-client-5.6.47:  67%Extracting mysql56-client-5.6.47:  68%Extracting mysql56-client-5.6.47:  69%Extracting mysql56-client-5.6.47:  70%Extracting mysql56-client-5.6.47:  71%Extracting mysql56-client-5.6.47:  72%Extracting mysql56-client-5.6.47:  73%Extracting mysql56-client-5.6.47:  74%Extracting mysql56-client-5.6.47:  75%Extracting mysql56-client-5.6.47:  76%Extracting mysql56-client-5.6.47:  77%Extracting mysql56-client-5.6.47:  78%Extracting mysql56-client-5.6.47:  79%Extracting mysql56-client-5.6.47:  80%Extracting mysql56-client-5.6.47:  81%Extracting mysql56-client-5.6.47:  82%Extracting mysql56-client-5.6.47:  83%Extracting mysql56-client-5.6.47:  84%Extracting mysql56-client-5.6.47:  85%Extracting mysql56-client-5.6.47:  86%Extracting mysql56-client-5.6.47:  87%Extracting mysql56-client-5.6.47:  88%Extracting mysql56-client-5.6.47:  89%Extracting mysql56-client-5.6.47:  90%Extracting mysql56-client-5.6.47:  91%Extracting mysql56-client-5.6.47:  92%Extracting mysql56-client-5.6.47:  93%Extracting mysql56-client-5.6.47:  94%Extracting mysql56-client-5.6.47:  95%Extracting mysql56-client-5.6.47:  96%Extracting mysql56-client-5.6.47:  97%Extracting mysql56-client-5.6.47:  98%Extracting mysql56-client-5.6.47:  99%Extracting mysql56-client-5.6.47: 100%
-Message from mysql56-client-5.6.47:
-
-Please be aware the database client is vulnerable
-to CVE-2015-3152 - SSL Downgrade aka "BACKRONYM".
-You may find more information at the following URL:
-
-http://www.vuxml.org/freebsd/36bd352d-299b-11e5-86ff-14dae9d210b8.html
-
-Although this database client is not listed as
-"affected", it is vulnerable and will not be
-receiving a patch. Please take note of this when
-deploying this software.
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m pkg add http://pkg.freebsd.org/FreeBSD:11:amd64/latest/All/mysql56-client-5.6.47.txz[17Dserver[11C
-Fetching mysql56-server-5.6.47.txz:   0%Fetching mysql56-server-5.6.47.txz:   0%   48 KiB  49.2kB/s    02:47 ETAFetching mysql56-server-5.6.47.txz:   4%  384 KiB 344.1kB/s    00:34 ETAFetching mysql56-server-5.6.47.txz:   8%  696 KiB 319.5kB/s    00:26 ETAFetching mysql56-server-5.6.47.txz:  10%  888 KiB 196.6kB/s    00:26 ETAFetching mysql56-server-5.6.47.txz:  12%  992 KiB 106.5kB/s    00:29 ETAFetching mysql56-server-5.6.47.txz:  13%    1 MiB 139.3kB/s    00:29 ETAFetching mysql56-server-5.6.47.txz:  17%    1 MiB 254.0kB/s    00:28 ETAFetching mysql56-server-5.6.47.txz:  21%    2 MiB 368.6kB/s    00:25 ETAFetching mysql56-server-5.6.47.txz:  25%    2 MiB 368.6kB/s    00:23 ETAFetching mysql56-server-5.6.47.txz:  31%    2 MiB 434.2kB/s    00:20 ETAFetching mysql56-server-5.6.47.txz:  38%    3 MiB 573.4kB/s    00:16 ETAFetching mysql56-server-5.6.47.txz:  45%    4 MiB 573.4kB/s    00:13 ETAFetching mysql56-server-5.6.47.txz:  53%    4 MiB 688.1kB/s    00:10 ETAFetching mysql56-server-5.6.47.txz:  62%    5 MiB 761.9kB/s    00:07 ETAFetching mysql56-server-5.6.47.txz:  72%    6 MiB 827.4kB/s    00:05 ETAFetching mysql56-server-5.6.47.txz:  83%    7 MiB 884.7kB/s    00:02 ETAFetching mysql56-server-5.6.47.txz:  94%    7 MiB 917.5kB/s    00:00 ETAFetching mysql56-server-5.6.47.txz: 100%    8 MiB 393.7kB/s    00:21    
-Installing mysql56-server-5.6.47...
-Newer FreeBSD version for package mysql56-server:
-To ignore this error set IGNORE_OSVERSION=yes
-- package: 1103000
-- running kernel: 1102000
-Allow missmatch now?[Y/n]: y
-===> Creating groups.
-Creating group 'mysql' with gid '88'.
-===> Creating users
-Creating user 'mysql' with uid '88'.
-Extracting mysql56-server-5.6.47:   0%Extracting mysql56-server-5.6.47:   0%Extracting mysql56-server-5.6.47:   1%Extracting mysql56-server-5.6.47:   2%Extracting mysql56-server-5.6.47:   3%Extracting mysql56-server-5.6.47:   4%Extracting mysql56-server-5.6.47:   5%Extracting mysql56-server-5.6.47:   6%Extracting mysql56-server-5.6.47:   7%Extracting mysql56-server-5.6.47:   8%Extracting mysql56-server-5.6.47:   9%Extracting mysql56-server-5.6.47:  10%Extracting mysql56-server-5.6.47:  11%Extracting mysql56-server-5.6.47:  12%Extracting mysql56-server-5.6.47:  13%Extracting mysql56-server-5.6.47:  14%Extracting mysql56-server-5.6.47:  15%Extracting mysql56-server-5.6.47:  16%Extracting mysql56-server-5.6.47:  17%Extracting mysql56-server-5.6.47:  18%Extracting mysql56-server-5.6.47:  19%Extracting mysql56-server-5.6.47:  20%Extracting mysql56-server-5.6.47:  21%Extracting mysql56-server-5.6.47:  22%Extracting mysql56-server-5.6.47:  23%Extracting mysql56-server-5.6.47:  24%Extracting mysql56-server-5.6.47:  25%Extracting mysql56-server-5.6.47:  26%Extracting mysql56-server-5.6.47:  27%Extracting mysql56-server-5.6.47:  28%Extracting mysql56-server-5.6.47:  29%Extracting mysql56-server-5.6.47:  30%Extracting mysql56-server-5.6.47:  31%Extracting mysql56-server-5.6.47:  32%Extracting mysql56-server-5.6.47:  33%Extracting mysql56-server-5.6.47:  34%Extracting mysql56-server-5.6.47:  35%Extracting mysql56-server-5.6.47:  36%Extracting mysql56-server-5.6.47:  37%Extracting mysql56-server-5.6.47:  38%Extracting mysql56-server-5.6.47:  39%Extracting mysql56-server-5.6.47:  40%Extracting mysql56-server-5.6.47:  41%Extracting mysql56-server-5.6.47:  42%Extracting mysql56-server-5.6.47:  43%Extracting mysql56-server-5.6.47:  44%Extracting mysql56-server-5.6.47:  45%Extracting mysql56-server-5.6.47:  46%Extracting mysql56-server-5.6.47:  47%Extracting mysql56-server-5.6.47:  48%Extracting mysql56-server-5.6.47:  49%Extracting mysql56-server-5.6.47:  50%Extracting mysql56-server-5.6.47:  51%Extracting mysql56-server-5.6.47:  52%Extracting mysql56-server-5.6.47:  53%Extracting mysql56-server-5.6.47:  54%Extracting mysql56-server-5.6.47:  55%Extracting mysql56-server-5.6.47:  56%Extracting mysql56-server-5.6.47:  57%Extracting mysql56-server-5.6.47:  58%Extracting mysql56-server-5.6.47:  59%Extracting mysql56-server-5.6.47:  60%Extracting mysql56-server-5.6.47:  61%Extracting mysql56-server-5.6.47:  62%Extracting mysql56-server-5.6.47:  63%Extracting mysql56-server-5.6.47:  64%Extracting mysql56-server-5.6.47:  65%Extracting mysql56-server-5.6.47:  66%Extracting mysql56-server-5.6.47:  67%Extracting mysql56-server-5.6.47:  68%Extracting mysql56-server-5.6.47:  69%Extracting mysql56-server-5.6.47:  70%Extracting mysql56-server-5.6.47:  71%Extracting mysql56-server-5.6.47:  72%Extracting mysql56-server-5.6.47:  73%Extracting mysql56-server-5.6.47:  74%Extracting mysql56-server-5.6.47:  75%Extracting mysql56-server-5.6.47:  76%Extracting mysql56-server-5.6.47:  77%Extracting mysql56-server-5.6.47:  78%Extracting mysql56-server-5.6.47:  79%Extracting mysql56-server-5.6.47:  80%Extracting mysql56-server-5.6.47:  81%Extracting mysql56-server-5.6.47:  82%Extracting mysql56-server-5.6.47:  83%Extracting mysql56-server-5.6.47:  84%Extracting mysql56-server-5.6.47:  85%Extracting mysql56-server-5.6.47:  86%Extracting mysql56-server-5.6.47:  87%Extracting mysql56-server-5.6.47:  88%Extracting mysql56-server-5.6.47:  89%Extracting mysql56-server-5.6.47:  90%Extracting mysql56-server-5.6.47:  91%Extracting mysql56-server-5.6.47:  92%Extracting mysql56-server-5.6.47:  93%Extracting mysql56-server-5.6.47:  94%Extracting mysql56-server-5.6.47:  95%Extracting mysql56-server-5.6.47:  96%Extracting mysql56-server-5.6.47:  97%Extracting mysql56-server-5.6.47: 100%
-Message from mysql56-server-5.6.47:
-
-Please keep in mind that the default location for my.cnf will be changed
-from "/var/db/mysql/my.cnf" to "/usr/local/etc/mysql/my.cnf" in the near
-future.  If you do not want to move your my.cnf to the new location then
-you must set "mysql_optfile" in /etc/rc.conf to "/var/db/mysql/my.cnf".
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m /usr/local/bin/mysql_install_db --user=mysql --basedir=/usr/local --datadir=/var/db/mysql
-Installing MySQL system tables...2020-02-05 01:50:24 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
-2020-02-05 01:50:24 0 [Note] Ignoring --secure-file-priv value as server is running with --bootstrap.
-2020-02-05 01:50:24 0 [Note] /usr/local/libexec/mysqld (mysqld 5.6.47) starting as process 56115 ...
-2020-02-05 01:50:24 56115 [Note] InnoDB: Using atomics to ref count buffer pool pages
-2020-02-05 01:50:24 56115 [Note] InnoDB: The InnoDB memory heap is disabled
-2020-02-05 01:50:24 56115 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
-2020-02-05 01:50:24 56115 [Note] InnoDB: Memory barrier is not used
-2020-02-05 01:50:24 56115 [Note] InnoDB: Compressed tables use zlib 1.2.11
-2020-02-05 01:50:24 56115 [Note] InnoDB: Using CPU crc32 instructions
-2020-02-05 01:50:24 56115 [Note] InnoDB: Initializing buffer pool, size = 128.0M
-2020-02-05 01:50:24 56115 [Note] InnoDB: Completed initialization of buffer pool
-2020-02-05 01:50:24 56115 [Note] InnoDB: The first specified data file ./ibdata1 did not exist: a new database to be created!
-2020-02-05 01:50:24 56115 [Note] InnoDB: Setting file ./ibdata1 size to 12 MB
-2020-02-05 01:50:24 56115 [Note] InnoDB: Database physically writes the file full: wait...
-2020-02-05 01:50:24 56115 [Note] InnoDB: Setting log file ./ib_logfile101 size to 48 MB
-2020-02-05 01:50:25 56115 [Note] InnoDB: Setting log file ./ib_logfile1 size to 48 MB
-2020-02-05 01:50:25 56115 [Note] InnoDB: Renaming log file ./ib_logfile101 to ./ib_logfile0
-2020-02-05 01:50:25 56115 [Warning] InnoDB: New log files created, LSN=45781
-2020-02-05 01:50:25 56115 [Note] InnoDB: Doublewrite buffer not found: creating new
-2020-02-05 01:50:25 56115 [Note] InnoDB: Doublewrite buffer created
-2020-02-05 01:50:25 56115 [Note] InnoDB: 128 rollback segment(s) are active.
-2020-02-05 01:50:25 56115 [Warning] InnoDB: Creating foreign key constraint system tables.
-2020-02-05 01:50:25 56115 [Note] InnoDB: Foreign key constraint system tables created
-2020-02-05 01:50:25 56115 [Note] InnoDB: Creating tablespace and datafile system tables.
-2020-02-05 01:50:25 56115 [Note] InnoDB: Tablespace and datafile system tables created.
-2020-02-05 01:50:25 56115 [Note] InnoDB: Waiting for purge to start
-2020-02-05 01:50:25 56115 [Note] InnoDB: 5.6.47 started; log sequence number 0
-2020-02-05 01:50:25 56115 [Note] RSA private key file not found: /var/db/mysql//private_key.pem. Some authentication plugins will not work.
-2020-02-05 01:50:25 56115 [Note] RSA public key file not found: /var/db/mysql//public_key.pem. Some authentication plugins will not work.
-2020-02-05 01:50:26 56115 [Note] Binlog end
-2020-02-05 01:50:26 56115 [Note] InnoDB: FTS optimize thread exiting.
-2020-02-05 01:50:26 56115 [Note] InnoDB: Starting shutdown...
-2020-02-05 01:50:27 56115 [Note] InnoDB: Shutdown completed; log sequence number 1625977
-OK
-
-Filling help tables...2020-02-05 01:50:27 0 [Warning] TIMESTAMP with implicit DEFAULT value is deprecated. Please use --explicit_defaults_for_timestamp server option (see documentation for more details).
-2020-02-05 01:50:27 0 [Note] Ignoring --secure-file-priv value as server is running with --bootstrap.
-2020-02-05 01:50:27 0 [Note] /usr/local/libexec/mysqld (mysqld 5.6.47) starting as process 75037 ...
-2020-02-05 01:50:27 75037 [Note] InnoDB: Using atomics to ref count buffer pool pages
-2020-02-05 01:50:27 75037 [Note] InnoDB: The InnoDB memory heap is disabled
-2020-02-05 01:50:27 75037 [Note] InnoDB: Mutexes and rw_locks use GCC atomic builtins
-2020-02-05 01:50:27 75037 [Note] InnoDB: Memory barrier is not used
-2020-02-05 01:50:27 75037 [Note] InnoDB: Compressed tables use zlib 1.2.11
-2020-02-05 01:50:27 75037 [Note] InnoDB: Using CPU crc32 instructions
-2020-02-05 01:50:27 75037 [Note] InnoDB: Initializing buffer pool, size = 128.0M
-2020-02-05 01:50:27 75037 [Note] InnoDB: Completed initialization of buffer pool
-2020-02-05 01:50:27 75037 [Note] InnoDB: Highest supported file format is Barracuda.
-2020-02-05 01:50:27 75037 [Note] InnoDB: 128 rollback segment(s) are active.
-2020-02-05 01:50:27 75037 [Note] InnoDB: Waiting for purge to start
-2020-02-05 01:50:27 75037 [Note] InnoDB: 5.6.47 started; log sequence number 1625977
-2020-02-05 01:50:27 75037 [Note] RSA private key file not found: /var/db/mysql//private_key.pem. Some authentication plugins will not work.
-2020-02-05 01:50:27 75037 [Note] RSA public key file not found: /var/db/mysql//public_key.pem. Some authentication plugins will not work.
-2020-02-05 01:50:27 75037 [Note] Binlog end
-2020-02-05 01:50:27 75037 [Note] InnoDB: FTS optimize thread exiting.
-2020-02-05 01:50:27 75037 [Note] InnoDB: Starting shutdown...
-2020-02-05 01:50:28 75037 [Note] InnoDB: Shutdown completed; log sequence number 1625987
-OK
-
-To start mysqld at boot time you have to copy
-support-files/mysql.server to the right place for your system
-
-PLEASE REMEMBER TO SET A PASSWORD FOR THE MySQL root USER !
-To do so, start the server, then issue the following commands:
-
-  /usr/local/bin/mysqladmin -u root password 'new-password'
-  /usr/local/bin/mysqladmin -u root -h pfSense.prueba.localdomain password 'new-password'
-
-Alternatively you can run:
-
-  /usr/local/bin/mysql_secure_installation
-
-which will also give you the option of removing the test
-databases and anonymous user created by default.  This is
-strongly recommended for production servers.
-
-See the manual for more instructions.
-
-You can start the MySQL daemon with:
-
-  cd /usr/local ; /usr/local/bin/mysqld_safe &
-
-You can test the MySQL daemon with mysql-test-run.pl
-
-  cd mysql-test ; perl mysql-test-run.pl
-
-Please report any problems at http://bugs.mysql.com/
-
-The latest information about MySQL is available on the web at
-
-  http://www.mysql.com
-
-Support MySQL by buying support/licenses at http://shop.mysql.com
-
-New default config file was created as /usr/local/my.cnf and
-will be used by default by the server when you start it.
-You may edit this file to change server settings
-
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls /usr/local/my.cnf
-/usr/local/my.cnf
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m cat /usr/local/my.cnf
-# For advice on how to change settings please see
-# http://dev.mysql.com/doc/refman/5.6/en/server-configuration-defaults.html
-
-[mysqld]
-
-# Remove leading # and set to the amount of RAM for the most important data
-# cache in MySQL. Start at 70% of total RAM for dedicated server, else 10%.
-# innodb_buffer_pool_size = 128M
-
-# Remove leading # to turn on a very important data integrity option: logging
-# changes to the binary log between backups.
-# log_bin
-
-# These are commonly set, remove the # and set as required.
-# basedir = .....
-# datadir = .....
-# port = .....
-# server_id = .....
-# socket = .....
-
-# Remove leading # to set options mainly useful for reporting servers.
-# The server defaults are faster for transactions and fast SELECTs.
-# Adjust sizes as needed, experiment to find the optimal values.
-# join_buffer_size = 128M
-# sort_buffer_size = 2M
-# read_rnd_buffer_size = 2M 
-
-sql_mode=NO_ENGINE_SUBSTITUTION,STRICT_TRANS_TABLES 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls -alrt /var/db/mysql
-total 110708
-drwxr-xr-x  15 root   wheel       512 Feb  5 01:48 [34m..[39;49m[m
-drwx------   2 mysql  mysql       512 Feb  5 01:50 [34mtest[39;49m[m
--rw-rw----   1 mysql  mysql  50331648 Feb  5 01:50 ib_logfile1
-drwx------   2 mysql  mysql      2560 Feb  5 01:50 [34mperformance_schema[39;49m[m
-drwx------   2 mysql  mysql      2560 Feb  5 01:50 [34mmysql[39;49m[m
-drwxr-xr-x   5 mysql  mysql       512 Feb  5 01:50 [34m.[39;49m[m
--rw-rw----   1 mysql  mysql  50331648 Feb  5 01:50 ib_logfile0
--rw-rw----   1 mysql  mysql  12582912 Feb  5 01:50 ibdata1
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m chmod 777 /var/db/mysql
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m mv /usr/local/etc/rc.d/mysql-server /usr/local/etc/rc.d/mysql-server.sh
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m vi /usr/local/etc/rc.d/mysql-server.sh
-[1;41r[m[4l[?1h=[H[2J#!/bin/sh[1B#[1B# $FreeBSD: head/databases/mysql56-server/files/mysql-server.in 466505 2018-04-04 20:45:14Z mmokhi $[1B#[2B# PROVIDE: mysql[1B# REQUIRE: LOGIN[1B# KEYWORD: shutdown[2B#[1B# Add the following line to /etc/rc.conf to enable mysql:[1B# mysql_enable (bool):  Set to "NO" by default.[1B#[13;25HSet it to "YES" to enable MySQL.[1B# mysql_limits (bool):  Set to "NO" by default.[1B#[15;25HSet it to yes to run `limits -e -U mysql`[1B#[16;25Hjust before mysql starts.[1B# mysql_dbdir (str):    Default to "/var/db/mysql"[1B#[18;25HBase database directory.[1B# mysql_confdir (str):  Default to "/usr/local/etc/mysql"[1B#[20;25HBase configuration directory.[1B# mysql_optfile (str):  Server-specific option file.[1B#[22;25HSet it in the rc.conf or default behaviour of[1B#[23;25H`mysqld_safe` itself, will be picking[1B#[24;25H${mysql_confdir}/my.cnf if it exists.[1B# mysql_pidfile (str):  Custum PID file path and name.[1B#[26;25HDefault to "${mysql_dbdir}/${hostname}.pid".[1B# mysql_args (str):     Custom additional arguments to be passed[1B#[28;25Hto mysqld_safe (default empty).[1B#[2B. /etc/rc.subr[2Bname="mysql"[1Brcvar=mysql_enable[2Bload_rc_config $name[2B: ${mysql_enable="NO"}[1B: ${mysql_limits="NO"}[1B: ${mysql_dbdir="/var/db/mysql"}[H[40B/usr/local/etc/rc.d/mysql-server.sh: unmodified, readonly: line 1[H[40B[J[39A[1B[2B[1B[2B[1B[1B[2B[1B[2B[1B[2B[2B[1B[1B[2B[1B[1B[2B[1B[2B[1B[2B[1B[1B[2B[1B[1B[1B
-[A: ${mysql_confdir="/usr/local/etc/mysql"}[A[A[A: ${mysql_enable="[4BCopying file for recovery...[J[37;19HO"}[K"}[KY"}E"}S"}[4B:wq[7mRead-only file, not written; use ! to override[m[41;47H[7m.[37;21H[m[4B:[Kwq!/usr/local/etc/rc.d/mysql-server.sh: 91 lines, 2618 characters[?1l>
-[40;63H.[1B[41;1H[?1l>[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m chmod 755 /usr/local/etc/rc.d/mysql-server.sh
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m echo 'mysql_enable="YES"' >> /etc/rc.conf
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m /usr/local/etc/rc.d/mysql-server.sh start
-Starting mysql.
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m /usr/local/bin/mysqladmin -u root password 'passw0rd'
-Warning: Using a password on the command line interface can be insecure.
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m /usr/local/bin/mysqladmin -u root
-/usr/local/bin/mysqladmin  Ver 8.42 Distrib 5.6.47, for FreeBSD11.3 on amd64
-Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Administration program for the mysqld daemon.
-Usage: /usr/local/bin/mysqladmin [OPTIONS] command command....
-  --bind-address=name IP address to bind to.
-  -c, --count=#       Number of iterations to make. This works with -i
-                      (--sleep) only.
-  --debug-check       Check memory and open file usage at exit.
-  --debug-info        Print some debug info at exit.
-  -f, --force         Don't ask for confirmation on drop database; with
-                      multiple commands, continue even if an error occurs.
-  -C, --compress      Use compression in server/client protocol.
-  --character-sets-dir=name 
-                      Directory for character set files.
-  --default-character-set=name 
-                      Set the default character set.
-  -?, --help          Display this help and exit.
-  -h, --host=name     Connect to host.
-  -b, --no-beep       Turn off beep on error.
-  -p, --password[=name] 
-                      Password to use when connecting to server. If password is
-                      not given it's asked from the tty.
-  -P, --port=#        Port number to use for connection or 0 for default to, in
-                      order of preference, my.cnf, $MYSQL_TCP_PORT,
-                      /etc/services, built-in default (3306).
-  --protocol=name     The protocol to use for connection (tcp, socket, pipe,
-                      memory).
-  -r, --relative      Show difference between current and previous values when
-                      used with -i. Currently only works with extended-status.
-  --secure-auth       Refuse client connecting to server if it uses old
-                      (pre-4.1.1) protocol.
-                      (Defaults to on; use --skip-secure-auth to disable.)
-  -s, --silent        Silently exit if one can't connect to server.
-  -S, --socket=name   The socket file to use for connection.
-  -i, --sleep=#       Execute commands repeatedly with a sleep between.
-  --ssl               Enable SSL for connection (automatically enabled with
-                      other flags).
-  --ssl-ca=name       CA file in PEM format (check OpenSSL docs, implies
-                      --ssl).
-  --ssl-capath=name   CA directory (check OpenSSL docs, implies --ssl).
-  --ssl-cert=name     X509 cert in PEM format (implies --ssl).
-  --ssl-cipher=name   SSL cipher to use (implies --ssl).
-  --ssl-key=name      X509 key in PEM format (implies --ssl).
-  --ssl-crl=name      Certificate revocation list (implies --ssl).
-  --ssl-crlpath=name  Certificate revocation list path (implies --ssl).
-  --ssl-verify-server-cert 
-                      Verify server's "Common Name" in its cert against
-                      hostname used when connecting. This option is disabled by
-                      default.
-  --ssl-mode=name     SSL connection mode.
-  -u, --user=name     User for login if not current user.
-  -v, --verbose       Write more information.
-  -V, --version       Output version information and exit.
-  -E, --vertical      Print output vertically. Is similar to --relative, but
-                      prints output vertically.
-  -w, --wait[=#]      Wait and retry if connection is down.
-  --connect-timeout=# 
-  --shutdown-timeout=# 
-  --plugin-dir=name   Directory for client-side plugins.
-  --default-auth=name Default authentication client-side plugin to use.
-  --enable-cleartext-plugin 
-                      Enable/disable the clear text authentication plugin.
-
-Variables (--variable-name=value)
-and boolean options {FALSE|TRUE}  Value (after reading options)
---------------------------------- ----------------------------------------
-bind-address                      (No default value)
-count                             0
-debug-check                       FALSE
-debug-info                        FALSE
-force                             FALSE
-compress                          FALSE
-character-sets-dir                (No default value)
-default-character-set             auto
-host                              (No default value)
-no-beep                           FALSE
-port                              0
-relative                          FALSE
-secure-auth                       TRUE
-socket                            (No default value)
-sleep                             0
-ssl                               FALSE
-ssl-ca                            (No default value)
-ssl-capath                        (No default value)
-ssl-cert                          (No default value)
-ssl-cipher                        (No default value)
-ssl-key                           (No default value)
-ssl-crl                           (No default value)
-ssl-crlpath                       (No default value)
-ssl-verify-server-cert            FALSE
-user                              root
-verbose                           FALSE
-vertical                          FALSE
-connect-timeout                   43200
-shutdown-timeout                  3600
-plugin-dir                        (No default value)
-default-auth                      (No default value)
-enable-cleartext-plugin           FALSE
-
-Default options are read from the following files in the given order:
-/usr/local/etc/my.cnf /usr/local/etc/mysql/my.cnf ~/.my.cnf 
-The following groups are read: mysqladmin client
-The following options may be given as the first argument:
---print-defaults        Print the program argument list and exit.
---no-defaults           Don't read default options from any option file,
-                        except for login file.
---defaults-file=#       Only read default options from the given file #.
---defaults-extra-file=# Read this file after the global files are read.
---defaults-group-suffix=#
-                        Also read groups with concat(group, suffix)
---login-path=#          Read this path from the login file.
-
-Where command is a one or more of: (Commands may be shortened)
-  create databasename	Create a new database
-  debug			Instruct server to write debug information to log
-  drop databasename	Delete a database and all its tables
-  extended-status       Gives an extended status message from the server
-  flush-hosts           Flush all cached hosts
-  flush-logs            Flush all logs
-  flush-status		Clear status variables
-  flush-tables          Flush all tables
-  flush-threads         Flush the thread cache
-  flush-privileges      Reload grant tables (same as reload)
-  kill id,id,...	Kill mysql threads
-  password [new-password] Change old password to new-password in current format
-  old-password [new-password] Change old password to new-password in old format
-  ping			Check if mysqld is alive
-  processlist		Show list of active threads in server
-  reload		Reload grant tables
-  refresh		Flush all tables and close and open logfiles
-  shutdown		Take server down
-  status		Gives a short status message from the server
-  start-slave		Start slave
-  stop-slave		Stop slave
-  variables             Prints variables available
-  version		Get version info from server
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m mu[Kysql
-mysql: Command not found.
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m /usr/local/bin/mysql
-ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m /usr/local/bin/mysql -u root -p
-Enter password: 
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 3
-Server version: 5.6.47 Source distribution
-
-Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql> show databases;
-+--------------------+
-| Database           |
-+--------------------+
-| information_schema |
-| mysql              |
-| performance_schema |
-| test               |
-+--------------------+
-4 rows in set (0.00 sec)
-
-mysql> exit
-Bye
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m telnet localhost 22[K[K3306
-Trying ::1...
-Connected to localhost.
-Escape character is '^]'.
-J   
-5.6.47    lEUYB|i{  €          P\[8C(?AinlT mysql_native_password 
-
-!  #08S01Got packets out of orderConnection closed by foreign host.
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m vi /usr/local/bin/mysql_relaunch.sh
-[1;41r[m[4l[?1h=[H[2J[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[H[40B/usr/local/bin/mysql_relaunch.sh: new file: line 1[H[40B[J[H#!/usr/bin/env sh[1B [1Bservice /mysql-server.sh status > /dev/null[1Bif [ $? != 0 ]; then[1B [7Cservice mysql-server.sh start[1Bfi[35BCopying file for recovery...[J[35Afi[35B:wq/usr/local/bin/mysql_relaunch.sh: new file: 6 lines, 127 characters[?1l>
-[40;68H.[1B[41;1H[?1l>[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m /usr/local/bin/mysqladmin -u root password 'passw0rd'
-/usr/local/bin/mysqladmin: connect to server at 'localhost' failed
-error: 'Access denied for user 'root'@'localhost' (using password: NO)'
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ps -ef -Ef +*[5D
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ___...---__:::[K[K[K[K[K[K[K[K[K[K[K[K[K[K++**^`````[K[K[K[K[K[K[K[K[K[K
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ps -efaux
-USER      PID %CPU %MEM    VSZ    RSS TT  STAT STARTED     TIME COMMAND
-root       11 99.0  0.0      0     16  -  RNL  01:29   27:05.77  [idle]
-root        0  0.0  0.0      0    240  -  DLs  01:29    0:04.57  [kernel]
-root        1  0.0  0.1   5020    560  -  ILs  01:29    0:00.02  /sbin/init --
-root        2  0.0  0.0      0     16  -  DL   01:29    0:00.00  [crypto]
-root        3  0.0  0.0      0     16  -  DL   01:29    0:00.00  [crypto returns 0]
-root        4  0.0  0.0      0     32  -  DL   01:29    0:00.76  [cam]
-root        5  0.0  0.0      0     16  -  DL   01:29    0:00.00  [sctp_iterator]
-root        6  0.0  0.0      0     16  -  DL   01:29    0:00.74  [pf purge]
-root        7  0.0  0.0      0     16  -  DL   01:29    0:00.40  [rand_harvestq]
-root        8  0.0  0.0      0     16  -  DL   01:29    0:00.00  [soaiod1]
-root        9  0.0  0.0      0     16  -  DL   01:29    0:00.00  [soaiod2]
-root       10  0.0  0.0      0     16  -  DL   01:29    0:00.00  [audit]
-root       12  0.0  0.0      0    240  -  WL   01:29    0:05.15  [intr]
-root       13  0.0  0.0      0     16  -  DL   01:29    0:00.00  [ng_queue]
-root       14  0.0  0.0      0     48  -  DL   01:29    0:00.04  [geom]
-root       15  0.0  0.0      0    160  -  DL   01:29    0:00.10  [usb]
-root       16  0.0  0.0      0     16  -  DL   01:29    0:00.00  [soaiod3]
-root       17  0.0  0.0      0     16  -  DL   01:29    0:00.00  [soaiod4]
-root       18  0.0  0.0      0     48  -  DL   01:29    0:00.07  [pagedaemon]
-root       19  0.0  0.0      0     16  -  DL   01:29    0:00.00  [vmdaemon]
-root       20  0.0  0.0      0     16  -  DNL  01:29    0:00.00  [pagezero]
-root       21  0.0  0.0      0     16  -  DL   01:29    0:00.03  [bufspacedaemon]
-root       22  0.0  0.0      0     32  -  DL   01:29    0:00.14  [bufdaemon]
-root       23  0.0  0.0      0     16  -  DL   01:29    0:00.02  [vnlru]
-root       24  0.0  0.0      0     16  -  DL   01:29    0:00.18  [syncer]
-root       58  0.0  0.0      0     16  -  DL   01:29    0:00.01  [md0]
-root      345  0.0  2.1  88380  21416  -  Ss   01:29    0:00.15 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin OLDPWD=/ PWD=/var/run H
-root      347  0.0  3.1  88508  30588  -  I    01:29    0:00.36 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin OLDPWD=/ PWD=/var/run H
-root      348  0.0  3.1  88640  30820  -  I    01:29    0:01.05 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin OLDPWD=/ PWD=/var/run H
-root      384  0.0  0.4   9240   4440  -  INs  01:29    0:00.02 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin fcgipath=/var/run/php-f
-root      386  0.0  0.4   9240   4232  -  IN   01:29    0:00.00 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin fcgipath=/var/run/php-f
-root      420  0.0  0.5   9184   4964  -  Ss   01:29    0:00.11 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin OLDPWD=/ fcgipath=/var/
-root     1325  0.0  0.8  12612   7520  -  Is   01:36    0:00.00 LOGNAME=root PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin PWD=/etc U
-root     1338  0.0  0.8  12904   8324  -  Ss   01:36    0:00.45 LOGNAME=root PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin PWD=/etc U
-root     3971  0.0  0.2   6340   2320  -  Ss   01:31    0:00.01 LOGNAME=root PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin PWD=/ HOME
-unbound 10369  0.0  1.5  23696  15096  -  Is   01:36    0:00.32 LOGNAME=root PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin PWD=/etc U
-mysql   14254  0.0  0.3   6968   2852  -  Is   01:53    0:00.01 VENDOR=amd SSH_CLIENT=192.168.1.3 49930 22 LSCOLORS=exfxcxdxbxegedabagacad LOGNAME=root O
-root    14265  0.0  0.2   6600   2348  -  Ss   01:30    0:00.10 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin OLDPWD=/ fcgipath=/var/
-dhcpd   16577  0.0  0.8  12580   8076  -  Is   01:36    0:00.00 LOGNAME=root PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin PWD=/etc U
-root    18306  0.0  2.9  88508  28484  -  I    01:31    0:00.09 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin OLDPWD=/ PWD=/var/run H
-root    25428  0.0  0.2   4144   1952  -  SNC  01:57    0:00.00 LOGNAME=root PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin PWD=/usr/l
-mysql   32932  0.0 46.8 710124 467308  -  I    01:53    0:00.57 VENDOR=amd SSH_CLIENT=192.168.1.3 49930 22 LOGNAME=root LSCOLORS=exfxcxdxbxegedabagacad O
-root    34625  0.0  0.3   6968   2520  -  Is   01:30    0:00.01 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin fcgipath=/var/run/php-f
-root    34777  0.0  0.2   6196   2004  -  I    01:30    0:00.00 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin OLDPWD=/ fcgipath=/var/
-root    34901  0.0  0.4  11912   4484  -  IC   01:30    0:00.02 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin OLDPWD=/ fcgipath=/var/
-root    35186  0.0  0.2   6528   2468  -  IC   01:30    0:00.01 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin OLDPWD=/ fcgipath=/var/
-root    35317  0.0  0.3   6968   2520  -  I    01:30    0:00.00 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin fcgipath=/var/run/php-f
-root    35388  0.0  0.3   6968   2504  -  I    01:30    0:00.00 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin OLDPWD=/ fcgipath=/var/
-root    37230  0.0  3.1  88640  30784  -  I    01:31    0:01.20 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin OLDPWD=/ PWD=/var/run H
-root    43743  0.0  0.2   6368   2332  -  Is   01:30    0:00.01 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin OLDPWD=/usr/local/www f
-root    55769  0.0  1.0  10352  10468  -  Ss   01:36    0:00.27 LOGNAME=root PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin PWD=/etc U
-root    57755  0.0  0.8  21544   7524  -  Is   01:36    0:00.00 LOGNAME=root PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin PWD=/usr/l
-root    57823  0.0  0.8  21544   8000  -  I    01:36    0:00.00 LOGNAME=root PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin PWD=/usr/l
-root    58048  0.0  0.8  21544   7996  -  I    01:36    0:00.00 LOGNAME=root PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin PWD=/usr/l
-root    58545  0.0  0.3   6968   2800  -  SN   01:36    0:00.17 LOGNAME=root PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin PWD=/usr/l
-root    74679  0.0  0.2   6900   2448  -  Is   01:31    0:00.42 LOGNAME=root PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin PWD=/etc U
-root    85035  0.0  2.8  88508  28020  -  I    01:31    0:00.05 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin OLDPWD=/ PWD=/var/run H
-root    85518  0.0  0.2   6264   2328  -  Ss   01:31    0:00.32 LOGNAME=root PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/local/sbin PWD=/etc U
-root    87310  0.0  0.3   6968   2772  -  I    01:36    0:00.00 LOGNAME=root LANG=en_US.UTF-8 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/loca
-root    88886  0.0  0.3   6400   2528  -  Ss   01:30    0:00.12 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin OLDPWD=/ fcgipath=/var/
-root    89740  0.0  0.2   4144   1952  -  IC   01:36    0:00.00 LOGNAME=root LANG=en_US.UTF-8 PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin:/usr/loca
-root    89962  0.0  0.2   6192   2020  -  Is   01:30    0:00.00 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin fcgipath=/var/run/php-f
-root    90238  0.0  0.2   6192   2036  -  I    01:30    0:00.00 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin fcgipath=/var/run/php-f
-root    90336  0.0  0.2   6192   2020  -  Is   01:30    0:00.00 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin fcgipath=/var/run/php-f
-root    90550  0.0  0.2   6192   2036  -  I    01:30    0:00.00 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin fcgipath=/var/run/php-f
-root    90839  0.0  0.2   6192   2020  -  Is   01:30    0:00.00 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin fcgipath=/var/run/php-f
-root    91380  0.0  0.2   6192   2036  -  I    01:30    0:00.00 PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/bin:/usr/local/sbin fcgipath=/var/run/php-f
-root    33364  0.0  0.3   6720   2780 v0  Is   01:30    0:00.03 TERM=xterm login [pam] (login)
-root    36039  0.0  0.3   6968   2888 v0  I    01:30    0:00.01 USER=root LOGNAME=root HOME=/root SHELL=/bin/sh BLOCKSIZE=K MAIL=/var/mail/root PATH=/sbi
-root    36283  0.0  0.3   6968   2768 v0  I+   01:30    0:00.01 LOGNAME=root MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:/usr/local/sbin:/usr/
-root    33401  0.0  0.2   6312   2128 v1  Is+  01:30    0:00.00 TERM=xterm /usr/libexec/getty Pc ttyv1
-root    33478  0.0  0.2   6312   2128 v2  Is+  01:30    0:00.01 TERM=xterm /usr/libexec/getty Pc ttyv2
-root    33781  0.0  0.2   6312   2128 v3  Is+  01:30    0:00.00 TERM=xterm /usr/libexec/getty Pc ttyv3
-root    33983  0.0  0.2   6312   2128 v4  Is+  01:30    0:00.00 TERM=xterm /usr/libexec/getty Pc ttyv4
-root    33992  0.0  0.2   6312   2128 v5  Is+  01:30    0:00.00 TERM=xterm /usr/libexec/getty Pc ttyv5
-root    34258  0.0  0.2   6312   2128 v6  Is+  01:30    0:00.01 TERM=xterm /usr/libexec/getty Pc ttyv6
-root    34528  0.0  0.2   6312   2128 v7  Is+  01:30    0:00.02 TERM=xterm /usr/libexec/getty Pc ttyv7
-root     1849  0.0  0.3   6968   2900  0  Is   01:36    0:00.01 USER=root LOGNAME=root HOME=/root MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbin:/usr/bin:
-root     2064  0.0  0.3   6968   2768  0  I    01:36    0:00.00 SSH_CLIENT=192.168.1.3 49930 22 LOGNAME=root MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbi
-root     5092  0.0  0.4   7276   3704  0  S    01:36    0:00.11 SSH_CLIENT=192.168.1.3 49930 22 LOGNAME=root MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbi
-root    25518  0.0  0.3   6808   2692  0  R+   01:57    0:00.01 SSH_CLIENT=192.168.1.3 49930 22 LOGNAME=root MAIL=/var/mail/root PATH=/sbin:/bin:/usr/sbi
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m echo '*/5      *      *       *       *       root  /usr/local/bin/mysql_relaunch.sh' >> /etc/cront ab
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m crontab -l 
-crontab: no crontab for root
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m crontab -e 
-crontab: no crontab for root - using an empty one
-[1;41r[m[4l[?1h=[H[2J[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[H[40B/tmp/crontab.6RjeGUjVfN: unmodified: line 1[H[40B[J[H*/5[6C*[6C*[7C*[7C*[7Croot  /usr/local/bin/mysql_relaunch.sh' >[40BCopying file for recovery...[J[1;82H[1P[1P[1P[1P[1P[1P[1P[1P[2P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P[1P *root  /usr/local/bin/mysql_relaunch.sh' >[41D root  /usr/local/bin/mysql_relaunch.sh' >[41D*root  /usr/local/bin/mysql_relaunch.sh' >[41D root  /usr/local/bin/mysql_relaunch.sh' >[1;9H*root  /usr/local/bin/mysql_relaunch.sh' >[1;10H root  /usr/local/bin/mysql_relaunch.sh' >[1;11H*root  /usr/local/bin/mysql_relaunch.sh' >[1;12H root  /usr/local/bin/mysql_relaunch.sh' >[1;13H[1;53H  [40B:wq/tmp/crontab.6RjeGUjVfN: 1 lines, 51 characters[?1l>[J[H~[K[39B/tmp/crontab.6RjeGUjVfN: 1 lines, 51 characters.[1B[41;1H[?1l>crontab: installing new crontab
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ceontab
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m crontab -l 
-*/5 * * * * root  /usr/local/bin/mysql_relaunch.sh
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m cat /usr/local/bin/mysql_relaunch.sh
-#!/usr/bin/env sh  
-
-service /mysql-server.sh status > /dev/null
-if [ $? != 0 ]; then
-        service mysql-server.sh start
-fi
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m service mysql-server.sh status
-mysql is running as pid 32932.
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ps -feaux ?[K[7D-feaux [7D-feaux grep 32932[4h|[4l[4h [4l
-mysql   32932   0.0 46.8 710124 467308  -  I    01:53    0:00.85 VENDOR=amd SSH_CLIENT=192.168.1.3 49930 22 LOGNAME=root LSCOLORS=exfxcxdxbxegedabagacad 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ps -feaux | grep 32932[22Dservice mysql-server.sh status[30Dcat /usr/local/bin/mysql_relaunch.sh[35Drontab -l[Kel[10Decho '*/5      *      *       *       *       root  /usr/local/bin/mysql_relaunch.sh' >> /etc/cront ab[A[53Cps -efaux[K[89C a[K[A[64C[9D/usr/local/bin/mysqladmin -u root password 'passw0rd'
-/usr/local/bin/mysqladmin: connect to server at 'localhost' failed
-error: 'Access denied for user 'root'@'localhost' (using password: NO)'
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m /usr/local/bin/mysqladmin -u root password 'passw0rd'
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m /usr/local/bin/mysql -u root 
-ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: NO)
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m /usr/local/bin/mysql -u root -p
-Enter password: 
-ERROR 1045 (28000): Access denied for user 'root'@'localhost' (using password: YES)
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m /usr/local/bin/mysql -u root -p
-Enter password: 
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 9
-Server version: 5.6.47 Source distribution
-
-Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql> 
-mysql> 
-mysql> 
-mysql> 
-mysql> 
-mysql> 
-mysql> 
-mysql> CREATE TABLE usuarios ( user_id MEDIUMINT NOT NULL AUTO_INCREMENT, name varchar(80) NOT NULL, email varchar(80) NOT NULL UNIQUE, celular varchar(13 ) NOT NULL, establecimiento varchar(80) NOT NULL, fecha DATE NOT NULL, PRIMARY KEY (user_id) );
-ERROR 1046 (3D000): No database selected
-mysql> GRANT ALL PRIVILEGES ON *.* TO 'admin'@'localhost' IDENTIFIED BY 'passw0rd';
-Query OK, 0 rows affected (0.00 sec)
-
-mysql> exit
-Bye
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m mysql -u admin -p
-mysql: Command not found.
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m mysql -u admin -p[17D[4h/usr/local/bin/[4l[9Croot -p[K[K[K[K[K[K[Kadmin -p 
-Enter password: 
-Welcome to the MySQL monitor.  Commands end with ; or \g.
-Your MySQL connection id is 10
-Server version: 5.6.47 Source distribution
-
-Copyright (c) 2000, 2020, Oracle and/or its affiliates. All rights reserved.
-
-Oracle is a registered trademark of Oracle Corporation and/or its
-affiliates. Other names may be trademarks of their respective
-owners.
-
-Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
-
-mysql> CREATE DATABASE usuarios;
-Query OK, 1 row affected (0.00 sec)
-
-mysql> use suuar[K[K[K[K[Kusuarios;
-Database changed
-mysql> CREATE TABLE usuarios ( user_id MEDIUMINT NOT NULL AUTO_INCREMENT, name varchar(80) NOT NULL, email varchar(80) NOT NULL UNIQUE, celular varchar(13 ) NOT NULL, establecimiento varchar(80) NOT NULL, fecha DATE NOT NULL, PRIMARY KEY (user_id) );
-Query OK, 0 rows affected (0.02 sec)
-
-mysql> 
-mysql> 
-mysql> 
-mysql> show tavles[K[K[K[Kbles;
-+--------------------+
-| Tables_in_usuarios |
-+--------------------+
-| usuarios           |
-+--------------------+
-1 row in set (0.00 sec)
-
-mysql> select * from usuarios ;
-Empty set (0.00 sec)
-
-mysql> INSERT INTO usuarios (`name` , `email` , `celular` , `establecimiento` , `fecha`) VALUES ("Diego Villegas", "dvillegast4@gmail.com", "0987121637",  "pintado", "2020-02-2")
-    -> ;
-Query OK, 1 row affected (0.00 sec)
-
-mysql> select * from usuarios
-    -> ;
-+---------+----------------+-----------------------+------------+-----------------+------------+
-| user_id | name           | email                 | celular    | establecimiento | fecha      |
-+---------+----------------+-----------------------+------------+-----------------+------------+
-|       1 | Diego Villegas | dvillegast4@gmail.com | 0987121637 | pintado         | 2020-02-02 |
-+---------+----------------+-----------------------+------------+-----------------+------------+
-1 row in set (0.00 sec)
-
-mysql> exit
-Bye
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m pkg install -y php72-mysqli
-Updating pfSense-core repository catalogue...
-pfSense-core repository is up to date.
-Updating pfSense repository catalogue...
-pfSense repository is up to date.
-All repositories are up to date.
-Updating database digests format:   0%Updating database digests format:   0%Updating database digests format:  50%Updating database digests format: 100%
-The following 1 package(s) will be affected (of 0 checked):
-
-New packages to be INSTALLED:
-	php72-mysqli: 7.2.10 [pfSense]
-
-Number of packages to be installed: 1
-
-39 KiB to be downloaded.
-[1/1] Fetching php72-mysqli-7.2.10.txz:   0%[1/1] Fetching php72-mysqli-7.2.10.txz: 100%   39 KiB  40.0kB/s    00:01    
-Checking integrity... done (0 conflicting)
-[1/1] Installing php72-mysqli-7.2.10...
-[1/1] Extracting php72-mysqli-7.2.10:   0%[1/1] Extracting php72-mysqli-7.2.10:   0%[1/1] Extracting php72-mysqli-7.2.10:   8%[1/1] Extracting php72-mysqli-7.2.10:  16%[1/1] Extracting php72-mysqli-7.2.10:  25%[1/1] Extracting php72-mysqli-7.2.10:  33%[1/1] Extracting php72-mysqli-7.2.10:  41%[1/1] Extracting php72-mysqli-7.2.10:  50%[1/1] Extracting php72-mysqli-7.2.10:  58%[1/1] Extracting php72-mysqli-7.2.10:  66%[1/1] Extracting php72-mysqli-7.2.10:  75%[1/1] Extracting php72-mysqli-7.2.10:  83%[1/1] Extracting php72-mysqli-7.2.10:  91%[1/1] Extracting php72-mysqli-7.2.10: 100%
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m vi usuarios.php
-[1;41r[m[4l[?1h=[H[2J[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[H[40Busuarios.php: new file: line 1[H[40B[J[H<?php[1B$servername = "localhost";[1B$username = "admin";[1B$password = "passw0rd";[1B$dbname = "usuarios";[1B$date_time=date("Y-m-d");[1B$date_sem=date("Y-m-d",strtotime($date_time."- 7 days"));[1B [1B// Create connection[1B$conn = new mysqli($servername, $username, $password, $dbname);[1B// Check connection[1Bif ($conn->connect_error) {[1B    die("Connection failed: " . $conn->connect_error);[1B}[1B$sql = "select name, email, celular, establecimiento, fecha from usuarios where fecha >= ".'"'.$date_sem.'"';[1B$result = $conn->query($sql);[1Becho "<table border = '1'> \n";[1Becho "<tr><td>Nombre</td><td>E-Mail</td><td>Celular</td><td>Establecimiento</td><td>Fecha</td></tr> \n";[1Bif ($result->num_rows > 0) {[1B    // output data of each row[1B    while($row = $result->fetch_assoc()) {[1B [7Cecho "<tr><td>". $row["name"]. "</td><td>". $row["email"]. "</td><td>" . $row["celular"] . "</td><td>" . $row["establecimiento"] . "</td><td>" . $[23;1Hrow["fecha"] . "</td></tr> \n";[1B    }[1B} else {[1B    echo "0 results";[1B}[1B [1B$conn->close();[1B?>[1B [1B</body>[1B</html>[8BCopying file for recovery...[J[33;8H[8B:wqusuarios.php: new file: 32 lines, 1018 characters[?1l>
-[40;50H.[1B[41;1H[?1l>[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m php
-[0mph[0mp        [0mphp-cg[0mi    [0mphp-confi[0mg [0mphp-fp[0mm    [0mphpiz[0me     
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m php usuarios.php 
-<table border = '1'> 
-<tr><td>Nombre</td><td>E-Mail</td><td>Celular</td><td>Establecimiento</td><td>Fecha</td></tr> 
-<tr><td>Diego Villegas</td><td>dvillegast4@gmail.com</td><td>0987121637</td><td>pintado</td><td>2020-02-02</td></tr> 
-
-</body>
-</html>
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m history 
-     1	1:38	vi /usr/local/etc/pkg/repos/pfSense.conf
-     2	1:39	pkg update
-     3	1:40	pkg search mysql
-     4	1:40	pkg add http://pkg.freebsd.org/FreeBSD:11:amd64/latest/All/mysql56-server-5.6.47.txz
-     5	1:45	pkg add http://pkg.freebsd.org/FreeBSD:11:amd64/latest/All/mysql56-server-5.6.47.txz
-     6	1:46	pkg add http://pkg.freebsd.org/FreeBSD:11:amd64/latest/All/mysql56-client-5.6.47.txz
-     7	1:46	pkg add http://pkg.freebsd.org/FreeBSD:11:amd64/latest/All/mysql56-server-5.6.47.txz
-     8	1:50	/usr/local/bin/mysql_install_db --user=mysql --basedir=/usr/local --datadir=/var/db/mysql
-     9	1:50	ls /usr/local/my.cnf
-    10	1:51	cat /usr/local/my.cnf
-    11	1:51	ls -alrt /var/db/mysql
-    12	1:51	chmod 777 /var/db/mysql
-    13	1:51	mv /usr/local/etc/rc.d/mysql-server /usr/local/etc/rc.d/mysql-server.sh
-    14	1:52	vi /usr/local/etc/rc.d/mysql-server.sh
-    15	1:52	chmod 755 /usr/local/etc/rc.d/mysql-server.sh
-    16	1:52	echo 'mysql_enable="YES"' >> /etc/rc.conf
-    17	1:53	/usr/local/etc/rc.d/mysql-server.sh start
-    18	1:53	/usr/local/bin/mysqladmin -u root password 'passw0rd'
-    19	1:54	/usr/local/bin/mysqladmin -u root
-    20	1:54	mysql
-    21	1:54	/usr/local/bin/mysql
-    22	1:54	/usr/local/bin/mysql -u root -p
-    23	1:55	telnet localhost 3306
-    24	1:56	vi /usr/local/bin/mysql_relaunch.sh
-    25	1:57	/usr/local/bin/mysqladmin -u root password 'passw0rd'
-    26	1:57	ps -efaux
-    27	1:59	echo '*/5      *      *       *       *       root  /usr/local/bin/mysql_relaunch.sh' >> /etc/crontab
-    28	1:59	crontab -l
-    29	1:59	crontab -e
-    30	2:00	crontab -l
-    31	2:00	cat /usr/local/bin/mysql_relaunch.sh
-    32	2:15	service mysql-server.sh status
-    33	2:16	ps -feaux | grep 32932
-    34	2:17	/usr/local/bin/mysqladmin -u root password 'passw0rd'
-    35	2:17	/usr/local/bin/mysql -u root
-    36	2:17	/usr/local/bin/mysql -u root -p
-    37	2:17	/usr/local/bin/mysql -u root -p
-    38	2:22	mysql -u admin -p
-    39	2:22	/usr/local/bin/mysql -u admin -p
-    40	3:14	pkg install -y php72-mysqli
-    41	3:14	vi usuarios.php
-    42	3:15	php usuarios.php
-    43	3:17	history
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m histrory[K[K[K[Kory 
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m pkg install ssmtp
-Updating pfSense-core repository catalogue...
-pfSense-core repository is up to date.
-Updating pfSense repository catalogue...
-pfSense repository is up to date.
-All repositories are up to date.
-pkg: No packages available to install matching 'ssmtp' have been found in the repositories
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m pkg add http://pkg.freebsd.org/FreeBSD:11:amd64/latest/All/ssmtp-2.64_3.txz
-Fetching ssmtp-2.64_3.txz:   0%Fetching ssmtp-2.64_3.txz: 100%   19 KiB  19.9kB/s    00:01    
-Installing ssmtp-2.64_3...
-Newer FreeBSD version for package ssmtp:
-To ignore this error set IGNORE_OSVERSION=yes
-- package: 1103000
-- running kernel: 1102000
-Allow missmatch now?[Y/n]: y
-===> Creating groups.
-Creating group 'ssmtp' with gid '916'.
-Extracting ssmtp-2.64_3:   0%Extracting ssmtp-2.64_3:   0%Extracting ssmtp-2.64_3:  11%Extracting ssmtp-2.64_3:  22%Extracting ssmtp-2.64_3:  33%Extracting ssmtp-2.64_3:  44%Extracting ssmtp-2.64_3:  55%Extracting ssmtp-2.64_3:  66%Extracting ssmtp-2.64_3:  77%Extracting ssmtp-2.64_3:  88%Extracting ssmtp-2.64_3: 100%
-Message from ssmtp-2.64_3:
-
-sSMTP has been installed successfully.
-
-To replace sendmail with ssmtp type "make replace" or change
-your /etc/mail/mailer.conf to:
-
-sendmail	/usr/local/sbin/ssmtp
-send-mail	/usr/local/sbin/ssmtp
-mailq		/usr/local/sbin/ssmtp
-newaliases	/usr/local/sbin/ssmtp
-hoststat	/usr/bin/true
-purgestat	/usr/bin/true
-
-
-However, before you can use the program, you should copy the files
-"revaliases.sample" and "ssmtp.conf.sample" in /usr/local/etc/ssmtp
-to "revaliases" and "ssmtp.conf" respectively and edit them to suit
-your needs.
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ~/usr/local/sbin/ssmtp/usr/local/sbin/ssmtp
-/root/usr/local/sbin/ssmtp/usr/local/sbin/ssmtp: Command not found.
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m /usr/local/sbin/ssmtp/usr/local/sbin/ssmtp
-/usr/local/sbin/ssmtp/usr/local/sbin/ssmtp: Not a directory.
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls /
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m /usr/local/etc/ssmtp
-/usr/local/etc/ssmtp: Permission denied.
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls -alrt /usr/local/etc/ssmtp
-total 16
--rw-r-----   1 root  ssmtp  1286 Feb  1 08:04 ssmtp.conf.sample
--rw-r-----   1 root  ssmtp   200 Feb  1 08:04 revaliases.sample
-drwxr-x---   2 root  ssmtp   512 Feb  1 08:04 [34m.[39;49m[m
-drwxr-xr-x  21 root  wheel  1536 Feb  5 03:46 [34m..[39;49m[m
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls /usr/local/
-[34;48mbin[0m/           [34;48metc[0m/           [34;48minfo[0m/          [34;48mlibdata[0m/       [34;48mman[0m/           [34;48mopenssl[0m/       [34;48msbin[0m/          [34;48mwww[0m/           
-[34;48mcaptiveportal[0m/ [34;48minclude[0m/       [34;48mlib[0m/           [34;48mlibexec[0m/       [0mmy.cnf[0m         [34;48mpkg[0m/           [34;48mshare[0m/         
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls /usr/local/bin/ss[K[K[K[K[K[Ksbin/
-[31;48mAPUresetbtn[0m*                   [31;48mdnssec-importkey[0m*              [31;48mntptime[0m*                       [31;48mrelayd[0m*
-[31;48mFW7541resetbtn[0m*                [31;48mdnssec-keyfromlabel[0m*           [31;48mopenvpn[0m*                       [31;48mscponlyc[0m*
-[35;48mRCC-DFFresetbtn[0m@               [31;48mdnssec-keygen[0m*                 [31;48mopenvpn-client[0m*                [31;48mshow_filter_reload_status.php[0m*
-[31;48mRCC-VEresetbtn[0m*                [31;48mdnssec-keymgr[0m*                 [31;48mopenvpn.attributes.sh[0m*         [31;48msmartctl[0m*
-[31;48malixresetbtn[0m*                  [31;48mdnssec-revoke[0m*                 [31;48mopenvpn.learn-address.sh[0m*      [31;48msmartd[0m*
-[31;48mataidle[0m*                       [31;48mdnssec-settime[0m*                [31;48movpn-linkdown[0m*                 [31;48msntp[0m*
-[31;48mathctrl.sh[0m*                    [31;48mdnssec-signzone[0m*               [31;48movpn-linkup[0m*                   [31;48mssh_tunnel_shell[0m*
-[31;48mbiosdecode[0m*                    [31;48mdnssec-verify[0m*                 [31;48movpn_auth_verify[0m*              [31;48msshguard[0m*
-[31;48mcharon-cmd[0m*                    [31;48mexecacb.php[0m*                   [31;48movpn_auth_verify_async[0m*        [31;48mssmtp[0m*
-[31;48mcheck_reload_status[0m*           [31;48mexpiretable[0m*                   [31;48mownership[0m*                     [31;48mswanctl[0m*
-[31;48mchoparp[0m*                       [31;48mfcgicli[0m*                       [31;48mpfSctl[0m*                        [31;48mufslabels.sh[0m*
-[31;48mcleargmirror.sh[0m*               [31;48mfilterdns[0m*                     [31;48mpfSense-dhclient-script[0m*       [31;48munbound[0m*
-[31;48mcleargpt.sh[0m*                   [31;48mfilterlog[0m*                     [31;48mpfSense-upgrade[0m*               [31;48munbound-anchor[0m*
-[31;48mclog[0m*                          [31;48mgenrandom[0m*                     [31;48mpfSsh.php[0m*                     [31;48munbound-checkconf[0m*
-[31;48mcpustats[0m*                      [31;48mgmirror_status_check.php[0m*      [31;48mpftop[0m*                         [31;48munbound-control[0m*
-[31;48mdhclient[0m*                      [31;48mhostapd[0m*                       [31;48mphp-fpm[0m*                       [31;48munbound-control-setup[0m*
-[31;48mdhclient-script[0m*               [31;48mhostapd_cli[0m*                   [31;48mpkg[0m*                           [31;48munbound-host[0m*
-[31;48mdhcp6c[0m*                        [31;48migmpproxy[0m*                     [31;48mpkg-static[0m*                    [31;48mupdate-leap[0m*
-[31;48mdhcp6ctl[0m*                      [31;48mipmievd[0m*                       [31;48mpkg2ng[0m*                        [31;48mupdate-smart-drivedb[0m*
-[31;48mdhcp6relay[0m*                    [31;48mipsec[0m*                         [31;48mppp-ipv6[0m*                      [31;48mvpddecode[0m*
-[31;48mdhcp6s[0m*                        [31;48mminiupnpd[0m*                     [31;48mppp-linkdown[0m*                  [31;48mvpn-linkdown[0m*
-[31;48mdhcpd[0m*                         [0mmpd.script[0m                     [31;48mppp-linkup[0m*                    [31;48mvpn-linkdown-l2tp[0m*
-[31;48mdhcpleases[0m*                    [31;48mmpd5[0m*                          [31;48mppp-log-uptime.sh[0m*             [31;48mvpn-linkdown-poes[0m*
-[31;48mdhcpleases6[0m*                   [31;48mnamed-journalprint[0m*            [31;48mppp-uptime.sh[0m*                 [31;48mvpn-linkup[0m*
-[31;48mdhcrelay[0m*                      [31;48mnginx[0m*                         [0mprefixes.php[0m                   [31;48mvpn-linkup-l2tp[0m*
-[31;48mdmidecode[0m*                     [31;48mnsec3hash[0m*                     [31;48mqstats[0m*                        [31;48mvpn-linkup-poes[0m*
-[31;48mdnsmasq[0m*                       [31;48mntp-keygen[0m*                    [31;48mradvd[0m*                         [31;48mwpa_cli[0m*
-[31;48mdnssec-cds[0m*                    [31;48mntpd[0m*                          [31;48mradvdump[0m*                      [31;48mwpa_passphrase[0m*
-[31;48mdnssec-checkds[0m*                [31;48mntpdate[0m*                       [31;48mread_global_var[0m*               [31;48mwpa_supplicant[0m*
-[31;48mdnssec-coverage[0m*               [31;48mntpdc[0m*                         [31;48mread_xml_tag.sh[0m*               [31;48mwrapresetbtn[0m*
-[31;48mdnssec-dsfromkey[0m*              [31;48mntpq[0m*                          [31;48mrelayctl[0m*                      [31;48mxinetd[0m*
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls /usr/local/sbin/
-[31;48mAPUresetbtn[0m*                   [31;48mdnssec-importkey[0m*              [31;48mntptime[0m*                       [31;48mrelayd[0m*
-[31;48mFW7541resetbtn[0m*                [31;48mdnssec-keyfromlabel[0m*           [31;48mopenvpn[0m*                       [31;48mscponlyc[0m*
-[35;48mRCC-DFFresetbtn[0m@               [31;48mdnssec-keygen[0m*                 [31;48mopenvpn-client[0m*                [31;48mshow_filter_reload_status.php[0m*
-[31;48mRCC-VEresetbtn[0m*                [31;48mdnssec-keymgr[0m*                 [31;48mopenvpn.attributes.sh[0m*         [31;48msmartctl[0m*
-[31;48malixresetbtn[0m*                  [31;48mdnssec-revoke[0m*                 [31;48mopenvpn.learn-address.sh[0m*      [31;48msmartd[0m*
-[31;48mataidle[0m*                       [31;48mdnssec-settime[0m*                [31;48movpn-linkdown[0m*                 [31;48msntp[0m*
-[31;48mathctrl.sh[0m*                    [31;48mdnssec-signzone[0m*               [31;48movpn-linkup[0m*                   [31;48mssh_tunnel_shell[0m*
-[31;48mbiosdecode[0m*                    [31;48mdnssec-verify[0m*                 [31;48movpn_auth_verify[0m*              [31;48msshguard[0m*
-[31;48mcharon-cmd[0m*                    [31;48mexecacb.php[0m*                   [31;48movpn_auth_verify_async[0m*        [31;48mssmtp[0m*
-[31;48mcheck_reload_status[0m*           [31;48mexpiretable[0m*                   [31;48mownership[0m*                     [31;48mswanctl[0m*
-[31;48mchoparp[0m*                       [31;48mfcgicli[0m*                       [31;48mpfSctl[0m*                        [31;48mufslabels.sh[0m*
-[31;48mcleargmirror.sh[0m*               [31;48mfilterdns[0m*                     [31;48mpfSense-dhclient-script[0m*       [31;48munbound[0m*
-[31;48mcleargpt.sh[0m*                   [31;48mfilterlog[0m*                     [31;48mpfSense-upgrade[0m*               [31;48munbound-anchor[0m*
-[31;48mclog[0m*                          [31;48mgenrandom[0m*                     [31;48mpfSsh.php[0m*                     [31;48munbound-checkconf[0m*
-[31;48mcpustats[0m*                      [31;48mgmirror_status_check.php[0m*      [31;48mpftop[0m*                         [31;48munbound-control[0m*
-[31;48mdhclient[0m*                      [31;48mhostapd[0m*                       [31;48mphp-fpm[0m*                       [31;48munbound-control-setup[0m*
-[31;48mdhclient-script[0m*               [31;48mhostapd_cli[0m*                   [31;48mpkg[0m*                           [31;48munbound-host[0m*
-[31;48mdhcp6c[0m*                        [31;48migmpproxy[0m*                     [31;48mpkg-static[0m*                    [31;48mupdate-leap[0m*
-[31;48mdhcp6ctl[0m*                      [31;48mipmievd[0m*                       [31;48mpkg2ng[0m*                        [31;48mupdate-smart-drivedb[0m*
-[31;48mdhcp6relay[0m*                    [31;48mipsec[0m*                         [31;48mppp-ipv6[0m*                      [31;48mvpddecode[0m*
-[31;48mdhcp6s[0m*                        [31;48mminiupnpd[0m*                     [31;48mppp-linkdown[0m*                  [31;48mvpn-linkdown[0m*
-[31;48mdhcpd[0m*                         [0mmpd.script[0m                     [31;48mppp-linkup[0m*                    [31;48mvpn-linkdown-l2tp[0m*
-[31;48mdhcpleases[0m*                    [31;48mmpd5[0m*                          [31;48mppp-log-uptime.sh[0m*             [31;48mvpn-linkdown-poes[0m*
-[31;48mdhcpleases6[0m*                   [31;48mnamed-journalprint[0m*            [31;48mppp-uptime.sh[0m*                 [31;48mvpn-linkup[0m*
-[31;48mdhcrelay[0m*                      [31;48mnginx[0m*                         [0mprefixes.php[0m                   [31;48mvpn-linkup-l2tp[0m*
-[31;48mdmidecode[0m*                     [31;48mnsec3hash[0m*                     [31;48mqstats[0m*                        [31;48mvpn-linkup-poes[0m*
-[31;48mdnsmasq[0m*                       [31;48mntp-keygen[0m*                    [31;48mradvd[0m*                         [31;48mwpa_cli[0m*
-[31;48mdnssec-cds[0m*                    [31;48mntpd[0m*                          [31;48mradvdump[0m*                      [31;48mwpa_passphrase[0m*
-[31;48mdnssec-checkds[0m*                [31;48mntpdate[0m*                       [31;48mread_global_var[0m*               [31;48mwpa_supplicant[0m*
-[31;48mdnssec-coverage[0m*               [31;48mntpdc[0m*                         [31;48mread_xml_tag.sh[0m*               [31;48mwrapresetbtn[0m*
-[31;48mdnssec-dsfromkey[0m*              [31;48mntpq[0m*                          [31;48mrelayctl[0m*                      [31;48mxinetd[0m*
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls /usr/local/sbin/ss
-[31;48mssh_tunnel_shell[0m* [31;48msshguard[0m*         [31;48mssmtp[0m*            
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls /usr/local/sbin/ssmtp 
-[30m[46m/usr/local/sbin/ssmtp[39;49m[m
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls -alrt /usr/local/sbin/ssmtp
--r-xr-sr-x  1 root  ssmtp  34232 Feb  1 08:04 [30m[46m/usr/local/sbin/ssmtp[39;49m[m
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m /usr/local/sbin/ssmtp
-ssmtp: No recipients supplied - mail will not be sent
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls /usr/local/etc/ssmtp/ssmtp.conf
-ls: /usr/local/etc/ssmtp/ssmtp.conf: No such file or directory
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls -alrt /usr/local/etc/ssmtp/s
-ls: /usr/local/etc/ssmtp/s: No such file or directory
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls -alrt /usr/local/etc/
-total 604
--rw-r--r--   1 root     wheel    207 Oct  3  2018 idnalias.conf.sample
--rw-r--r--   1 root     wheel    207 Oct  3  2018 idnalias.conf
--rw-r--r--   1 root     wheel   1816 Oct  3  2018 idn.conf.sample
--rw-r--r--   1 root     wheel   1816 Oct  3  2018 idn.conf
--rw-r--r--   1 root     wheel   2130 Oct  3  2018 dhcp6s.conf.sample
--rw-r--r--   1 root     wheel   1818 Oct  3  2018 dhcp6c.conf.sample
--rwxr-xr-x   1 root     wheel   5117 Oct  3  2018 [31mminiupnpd.conf.sample[39;49m[m
--r-xr-xr-x   1 root     wheel   5840 Oct  3  2018 [31msmartd_warning.sh[39;49m[m
--rw-r--r--   1 root     wheel   6699 Oct  3  2018 smartd.conf.sample
--rw-r--r--   1 root     wheel   3381 Oct  3  2018 radvd.conf.sample
--rw-r--r--   1 root     wheel   3381 Oct  3  2018 radvd.conf
--rw-r--r--   1 root     wheel   2799 Oct  3  2018 relayd.conf.sample
--rw-r--r--   1 root     wheel   2799 Oct  3  2018 relayd.conf
--rw-r--r--   1 root     wheel   1029 Oct  3  2018 dhclient.conf.example
--rw-r--r--   1 root     wheel   1029 Oct  3  2018 dhclient.conf
--rw-r--r--   1 root     wheel   3360 Oct  3  2018 dhcpd6.conf.sample
--rw-r--r--   1 root     wheel   3360 Oct  3  2018 dhcpd6.conf
--rw-r--r--   1 root     wheel   3266 Oct  3  2018 dhcpd.conf.sample
--rw-r--r--   1 root     wheel   3266 Oct  3  2018 dhcpd.conf
--rw-r--r--   1 root     wheel   4422 Oct  3  2018 php-fpm.conf.default
--rw-r--r--   1 root     wheel   4422 Oct  3  2018 php-fpm.conf
--rw-r--r--   1 root     wheel  70569 Oct  3  2018 php.ini-production
--rw-r--r--   1 root     wheel  70297 Oct  3  2018 php.ini-development
--rw-r--r--   1 root     wheel     99 Oct  3  2018 php.conf
--rw-r--r--   1 root     wheel    480 Oct  3  2018 pear.conf.sample
--rw-r--r--   1 root     wheel    480 Oct  3  2018 pear.conf
--rw-r--r--   1 root     wheel   1529 Oct  3  2018 igmpproxy.conf.sample
--rw-r--r--   1 root     wheel   1529 Oct  3  2018 igmpproxy.conf
--rw-r--r--   1 root     wheel  26721 Oct  3  2018 dnsmasq.conf.sample
--rw-r--r--   1 root     wheel  26721 Oct  3  2018 dnsmasq.conf
-drwxr-xr-x   3 root     wheel    512 Nov 21  2018 [34mpkg[39;49m[m
--rw-r--r--   1 root     wheel   2143 Nov 26  2018 pkg.conf.sample
--rw-r--r--   1 root     wheel  77079 May 10  2019 wpa_supplicant.conf.sample
--rw-r--r--   1 root     wheel  77079 May 10  2019 wpa_supplicant.conf
--rw-r--r--   1 root     wheel   2056 May 14  2019 sshguard.conf.sample
--rw-------   1 root     wheel     48 May 14  2019 ipsec.secrets.sample
--rw-------   1 root     wheel     48 May 14  2019 ipsec.secrets
--rw-r--r--   1 root     wheel    608 May 14  2019 ipsec.conf.sample
--rw-r--r--   1 root     wheel    608 May 14  2019 ipsec.conf
--rw-r--r--   1 root     wheel    281 May 14  2019 strongswan.conf.sample
--rw-r--r--   1 root     wheel    281 May 14  2019 strongswan.conf
-drwxr-xr-x   5 root     wheel    512 May 16  2019 [34mperiodic[39;49m[m
-drwxr-xr-x   2 root     wheel    512 May 16  2019 [34mbash_completion.d[39;49m[m
-drwxr-xr-x   2 root     wheel    512 May 16  2019 [34mphp-fpm.d[39;49m[m
-drwxr-xr-x   2 root     wheel    512 May 16  2019 [34mman.d[39;49m[m
-drwxr-xr-x   2 root     wheel    512 May 16  2019 [34mssl[39;49m[m
-drwxr-xr-x   2 unbound  wheel    512 May 16  2019 [34munbound[39;49m[m
-drwxr-xr-x  16 root     wheel    512 May 16  2019 [34mswanctl[39;49m[m
-drwxr-xr-x   3 root     wheel    512 May 16  2019 [34mstrongswan.d[39;49m[m
-drwxr-xr-x   2 root     wheel    512 May 16  2019 [34mopenldap[39;49m[m
-drwxr-xr-x  10 root     wheel    512 May 16  2019 [34mipsec.d[39;49m[m
-drwxr-xr-x   2 root     wheel    512 May 16  2019 [34mnginx[39;49m[m
-drwxr-xr-x   2 root     wheel    512 May 16  2019 [34msmartd_warning.d[39;49m[m
-drwxr-xr-x   2 root     wheel    512 May 16  2019 [34mscponly[39;49m[m
-drwxr-xr-x   2 root     wheel    512 May 16  2019 [34mmpd5[39;49m[m
-drwxr-x---   2 root     ssmtp    512 Feb  1 08:04 [34mssmtp[39;49m[m
--rw-r--r--   1 root     wheel   1031 Feb  4 18:35 php.ini
--rw-r--r--   1 root     wheel     40 Feb  4 18:36 sshguard.conf
--rw-r--r--   1 root     wheel     46 Feb  4 18:36 pkg.conf
-drwxr-xr-x   3 root     wheel    512 Feb  5 01:48 [34mmysql[39;49m[m
-drwxr-xr-x  16 root     wheel    512 Feb  5 01:50 [34m..[39;49m[m
-drwxr-xr-x   2 root     wheel   1024 Feb  5 01:51 [34mrc.d[39;49m[m
-drwxr-xr-x   2 root     wheel   1536 Feb  5 03:14 [34mphp[39;49m[m
-drwxr-xr-x  21 root     wheel   1536 Feb  5 03:46 [34m.[39;49m[m
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls -alrt /usr/local/etc/ss
-[0msshguard.conf[0m         [0msshguard.conf.sample[0m  [34;48mssl[0m/                  [34;48mssmtp[0m/                
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls -alrt /usr/local/etc/ssmtp/
-[0mrevaliases.sample[0m  [0mssmtp.conf.sample[0m  
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls -alrt /usr/local/etc/ssmtp/
-[0mrevaliases.sample[0m  [0mssmtp.conf.sample[0m  
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls -alrt /usr/local/etc/ssmtp/cp 
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m cp /usr/local/etc/ssmtp/ssmtp.conf.sample [42D[4hx[4l[4hx[4l[4hx[4l[4hx[4lcp[P[P[P[P[P[P[4hm[4l[4hv[4l[40C/usr/local/etc/ssmtp/ssmtp.conf.
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m mv /usr/local/etc/ssmtp/ssmtp.conf.sample /usr/local/etc/ssmtp/ssmtp.conf.[P[P[P[P[P[P[33C[K
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m vi /usr/local/etc/ssmtp/ssmtp.conf
-[1;41r[m[4l[?1h=[H[2J#[1B# /etc/ssmtp.conf -- a config file for sSMTP sendmail.[1B#[2B# The person who gets all mail for userids < 1000[1B# Make this empty to disable rewriting.[1Broot=postmaster[2B# The place where the mail goes. The actual machine name is required[1B# no MX records are consulted. Commonly mailhosts are named mail.domain.com[1B# The example will fit if you are in domain.com and your mailhub is so named.[1Bmailhub=mail[2B# Example for SMTP port number 2525[1B# mailhub=mail.your.domain:2525[1B# Example for SMTP port number 25 (Standard/RFC)[1B# mailhub=mail.your.domain[1B# Example for SSL encrypted connection[1B# mailhub=mail.your.domain:465[2B# Where will the mail seem to come from?[1BrewriteDomain=[2B# The full hostname[1Bhostname=_HOSTNAME_[2B# Set this to never rewrite the "From:" line (unless not given) and to[1B# use that address in the "from line" of the envelope.[1B#FromLineOverride=YES[2B# Use SSL/TLS to send secure messages to server.[1B#UseTLS=YES[2B# Use SSL/TLS certificate to authenticate against smtp host.[1B#UseTLSCert=YES[2B# Use this RSA certificate.[1B#TLSCert=/usr/local/etc/ssmtp/ssmtp.pem[2B# Get enhanced (*really* enhanced) debugging information in the logs[H[40B/usr/local/etc/ssmtp/ssmtp.conf: unmodified: line 1[H[40B[J[39A[1B[1B[1B[1B[2B[1B[2B[1B[2B[1B[2B[A[A[2A[2A[A[A[A[A[7;15H[34BCopying file for recovery...[J[7;15H          =notificaciones.itservices@gmail.com[1B[9;40H[1B[1B[12;12H    =smtp.gmail.com:465[1B[14;26H[1B[1B[2B[2B[21;26H[22;14H[1B[24;19H[1B[1B[27;26H[1B[29;21H[1B[31;26H[32;11H[1B[35;15H[37;26H[1B[2B[H[2M[38B# If you want to have debugging of the config file parsing, move this option[1B# to the top of the config file and uncomment[40;26H[1B
-[A#Debug=YES[39;26H[A[2A[35;26H[2A[32;15H[31;26H[A[29;11H[28;26H[A[26;21H7[27;40r8[1BM[1;41r[27;1H7[27;40r8[2L[1;41r[27;1HAuthUser=notificaciones.itservices@gmail.com[1BAuthPass=YOUR_AUTH_PASS[1BFromLineOverride=YES[APAS              =sgqgznwryplihmkj[29;20H[1B[31;25H[32;11H[1P[9B:wq/usr/local/etc/ssmtp/ssmtp.conf: 46 lines, 1416 characters[?1l>
-[40;59H.[1B[41;1H[?1l>[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m cd 
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m ls
-.cshrc         .hushlogin     .k5login       .login         .mysql_history .profile       .shrc          .tcshrc        usuarios.php
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m vi body.txt
-[1;41r[m[4l[?1h=[H[2J[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[H[40Bbody.txt: new file: line 1[H[40B[J[Hto: lesthatd666@hotmail.com[1Bbcc: lesthatd666@gmail.com[1BFrom: notificaciones itservices[1BSubject: Notificacion portal cautivo[1BMIME-Version: 1.0[1B Content-Type: text/html[1B [1B<!DOCTYPE html>[1B<html>[1B<body>[1B<b>Se presenta adjunto, informe semanal de usuarios registrados en Poral Cautivo </b>[1B [1B<table border = '1'>[1B<tr><td>Nombre</td><td>E-Mail</td><td>Celular</td><td>Establecimiento</td><td>Fecha</td></tr>[1B<tr><td>Diego Villegas</td><td>alguien@tcs.com</td><td>0984151639</td><td>atahualpa</td><td>2019-12-26</td></tr>[1B<tr><td>sabina lemos</td><td>sabina@lemos.com</td><td>0998741638</td><td>atahualpa</td><td>2019-12-26</td></tr>[1B<tr><td>Joaquin Villegas</td><td>joaco@villegas.com</td><td>0984161537</td><td>atahualpa</td><td>2019-12-26</td></tr>[1B<tr><td>alguie vino</td><td>alguien@vinjo.com</td><td>0874131539</td><td>atahualpa</td><td>2019-12-26</td></tr>[1B [1B</body>[1B</html>[20BCopying file for recovery...[J[21;8H[20B:wqbody.txt: new file: 21 lines, 877 characters[?1l>
-[40;45H.[1B[41;1H[?1l>[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m cat body.txt 
-to: lesthatd666@hotmail.com
-bcc: lesthatd666@gmail.com
-From: notificaciones itservices
-Subject: Notificacion portal cautivo
-MIME-Version: 1.0
-Content-Type: text/html
-
-<!DOCTYPE html>
-<html>
-<body>
-<b>Se presenta adjunto, informe semanal de usuarios registrados en Poral Cautivo </b>
-
-<table border = '1'> 
-<tr><td>Nombre</td><td>E-Mail</td><td>Celular</td><td>Establecimiento</td><td>Fecha</td></tr> 
-<tr><td>Diego Villegas</td><td>alguien@tcs.com</td><td>0984151639</td><td>atahualpa</td><td>2019-12-26</td></tr> 
-<tr><td>sabina lemos</td><td>sabina@lemos.com</td><td>0998741638</td><td>atahualpa</td><td>2019-12-26</td></tr> 
-<tr><td>Joaquin Villegas</td><td>joaco@villegas.com</td><td>0984161537</td><td>atahualpa</td><td>2019-12-26</td></tr> 
-<tr><td>alguie vino</td><td>alguien@vinjo.com</td><td>0874131539</td><td>atahualpa</td><td>2019-12-26</td></tr> 
-
-</body>
-</html>
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m bi header.txt[13D[P[4hv[4l
-[1;41r[m[4l[?1h=[H[2J[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[1B~[H[40Bheader.txt: new file: line 1[H[40B[J[Hto: lesthatd666@hotmail.com[1Bbcc: lesthatd666@gmail.com[1BFrom: notificaciones itservices[1BSubject: Notificacion portal cautivo[1BMIME-Version: 1.0[1BContent-Type: text/html[1B [1B <!DOCTYPE html>[1B<html>[1B<body>[1B<b>Se presenta adjunto, informe semanal de usuarios registrados en Poral Cautivo </b>[30BCopying file for recovery...[J[11;86H[30B:wqheader.txt: new file: 11 lines, 283 characters[?1l>
-[40;47H.[1B[41;1H[?1l>[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m cat /root/header.txt >/root/body.txt
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m php /root/usuarios.php >>/root/body.txt
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m /usr/local/sbin/ssmtp -t < /root/body.txt
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m cat /root/body.txt
-to: lesthatd666@hotmail.com
-bcc: lesthatd666@gmail.com
-From: notificaciones itservices
-Subject: Notificacion portal cautivo
-MIME-Version: 1.0
-Content-Type: text/html
-
-<!DOCTYPE html>
-<html>
-<body>
-<b>Se presenta adjunto, informe semanal de usuarios registrados en Poral Cautivo </b>
-<table border = '1'> 
-<tr><td>Nombre</td><td>E-Mail</td><td>Celular</td><td>Establecimiento</td><td>Fecha</td></tr> 
-<tr><td>Diego Villegas</td><td>dvillegast4@gmail.com</td><td>0987121637</td><td>pintado</td><td>2020-02-02</td></tr> 
-
-</body>
-</html>
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m cat /usr/local/sbin/ssmtp [6D[4h [4l[Pssmtp | grep -v "-v "-v "#"
-Binary file (standard input) matches
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m cat /usr/local/sbin/ssmtp | grep -v "#"[34Droot/body.txt[K[18D[4h/usr/local/sbin/ssmtp -[4lt <[15C[41D[Pphp /root/usuarios.php >>[15C[40D[4h/[4lusr/local/sbin/ssmtp -t <[15C[41D[23Pcat[15C[18D[4h/usr/local/sbin/ssmtp -[4lt <[15C[41D[Pphp /root/usuarios.php >>[15C[40D[3Pcat /root/header.txt [16C[37D[24Pvi header.txt[13D[Pcat body.txt[12D[Pvi[9C[11Dls[Kcdvi /usr/local/etc/ssmtp/ssmtp.conf[34D[4hmv /usr/local/etc/ssmtp/ssmtp.con[4lf.[32C
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
-[K[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m cat /usr/local/etc/ssmtp/ssmtp.conf | grep -v "#"
-
-root=notificaciones.itservices@gmail.com
-
-mailhub=smtp.gmail.com:465
-
-
-rewriteDomain=
-
-hostname=_HOSTNAME_
-
-AuthUser=notificaciones.itservices@gmail.com
-AuthPass=sgqgznwryplihmkj
-FromLineOverride=YES
-
-UseTLS=YES
-
-
-
-[[1m2.4.4-RELEASE[m][[1mroot[m[0;1;31m@[0;0;0m[1mpfSense.prueba.localdomain[m]/root[0;1;31m:[0;0;0m 
