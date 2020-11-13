@@ -4,7 +4,7 @@
 #  %version:            1 %
 #  Description:			Install all dependences for Captive Portal can manage DB and email
 # =========================================================================================================
-#  %created_by:         Diego Villegas-dvillegast3@gmail.com (itservices) %
+#  %created_by:         Diego Villegas - diego.villegas@fdm-tech.com (FDM) %
 #  %date_created:       Wed Feb  5 09:07:30 +05 2020%
 # =========================================================================================================
 # change log
